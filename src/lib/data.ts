@@ -22,12 +22,11 @@ export const CLUSTERS: Cluster[] = [
   {
     id: "properti", label: "Properti", icon: "🏠",
     produk: [
-      { icon: "🏡", name: "Asuransi Kebakaran Rumah Tinggal Bekasi", desc: "Lindungi rumah tinggal Anda dari risiko kebakaran, petir, ledakan, dan asap. Premi terjangkau dengan manfaat penggantian yang memadai untuk hunian di Bekasi.", href: "/asuransi-properti/kebakaran" },
-      { icon: "🏪", name: "Asuransi Kebakaran Ruko & Rukan", desc: "Perlindungan menyeluruh untuk ruko dan bangunan komersial dari kebakaran dan risiko perluasan. Menjaga aset bisnis Anda di sepanjang jalur niaga Bekasi tetap aman.", href: "/asuransi-properti/kebakaran" },
-      { icon: "🏭", name: "Property All Risk – Pabrik & Gudang", desc: "Perlindungan komprehensif untuk pabrik, gudang, dan fasilitas produksi dari berbagai risiko fisik. Cocok untuk industri di kawasan Jababeka, MM2100, Delta Silicon, dan EJIP.", href: "/asuransi-properti/property-all-risk" },
-      { icon: "🌊", name: "Perluasan Banjir & Gempa Bumi", desc: "Jaminan tambahan dari banjir, gempa bumi, dan angin topan — sangat relevan mengingat sejumlah kawasan Bekasi rawan banjir musiman saat curah hujan tinggi.", href: "/asuransi-properti/banjir-gempa" },
-      { icon: "📦", name: "Asuransi Pergudangan (Warehouse)", desc: "Proteksi bangunan gudang beserta stok barang di dalamnya dari kebakaran, pencurian, dan kerusakan fisik lain. Relevan bagi pelaku usaha logistik dan distribusi di Bekasi.", href: "/asuransi-properti/property-all-risk" },
-      { icon: "🔒", name: "Asuransi Risiko Kejahatan", desc: "Proteksi terhadap pencurian, perampokan, dan vandalisme pada properti dan isi bangunan bisnis Anda. Ketenangan pikiran untuk pemilik usaha di Bekasi.", href: "/asuransi-properti/property-all-risk" },
+      { icon: "🏢", name: "Property All Risk (PAR)", desc: "Perlindungan menyeluruh (all-risk) untuk gedung, pabrik, dan aset komersial bernilai tinggi. Menjamin seluruh kerugian fisik kecuali yang secara eksplisit dikecualikan.", href: "/asuransi-properti/property-all-risk" },
+      { icon: "🔥", name: "Asuransi Kebakaran", desc: "Jaminan standar FLEXAS (Fire, Lightning, Explosion, Aircraft, Smoke) untuk ruko, bangunan usaha, dan properti komersial di Bekasi.", href: "/asuransi-properti/kebakaran" },
+      { icon: "📦", name: "Asuransi Gudang", desc: "Proteksi bangunan gudang beserta stok barang di dalamnya — relevan bagi pelaku usaha logistik dan pergudangan di kawasan industri Bekasi.", href: "/asuransi-properti/gudang" },
+      { icon: "🏭", name: "Asuransi Pabrik", desc: "Perlindungan bangunan dan aset tetap pabrik dari risiko kebakaran hingga bencana alam. Dirancang untuk kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon.", href: "/asuransi-properti/pabrik" },
+      { icon: "🏡", name: "Asuransi Rumah", desc: "Paket perlindungan rumah tinggal — kebakaran, pencurian, hingga perluasan banjir untuk kawasan perumahan Bekasi yang rawan luapan musiman.", href: "/asuransi-properti/rumah" },
     ],
   },
   {

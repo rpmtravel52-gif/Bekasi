@@ -11,9 +11,11 @@ const NAV_CLUSTERS = [
     { href: "/asuransi-kendaraan/armada-fleet", label: "Armada & Fleet" },
   ]},
   { href: "/asuransi-properti", icon: "🏠", label: "Asuransi Properti", sub: [
-    { href: "/asuransi-properti/kebakaran", label: "Kebakaran" },
-    { href: "/asuransi-properti/property-all-risk", label: "Property All Risk" },
-    { href: "/asuransi-properti/banjir-gempa", label: "Banjir & Gempa" },
+    { href: "/asuransi-properti/property-all-risk", label: "Property All Risk (PAR)" },
+    { href: "/asuransi-properti/kebakaran", label: "Asuransi Kebakaran" },
+    { href: "/asuransi-properti/gudang", label: "Asuransi Gudang" },
+    { href: "/asuransi-properti/pabrik", label: "Asuransi Pabrik" },
+    { href: "/asuransi-properti/rumah", label: "Asuransi Rumah" },
   ]},
   { href: "/asuransi-engineering", icon: "⚙️", label: "Engineering", sub: [
     { href: "/asuransi-engineering/contractor-all-risk", label: "Contractor All Risk" },
