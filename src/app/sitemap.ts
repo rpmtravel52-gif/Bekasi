@@ -11,6 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asuransi-properti/gudang",
     "/asuransi-properti/pabrik",
     "/asuransi-properti/rumah",
+    "/asuransi-liability",
+    "/asuransi-liability/public-liability",
+    "/asuransi-liability/limbah-b3",
   ];
   return [
     {
@@ -23,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${path}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
-      priority: path === "/asuransi-properti" ? 0.9 : 0.8,
+      priority: path === "/asuransi-properti" || path === "/asuransi-liability" ? 0.9 : 0.8,
     })),
   ];
 }

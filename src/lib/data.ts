@@ -48,10 +48,8 @@ export const CLUSTERS: Cluster[] = [
   {
     id: "liability", label: "Liability", icon: "🛡️",
     produk: [
-      { icon: "⚗️", name: "Liability Limbah B3", desc: "Perlindungan tanggung jawab hukum bagi perusahaan manufaktur yang menghasilkan, mengangkut, atau mengelola limbah B3 sesuai regulasi lingkungan hidup yang berlaku.", href: "/asuransi-liability/limbah-b3" },
-      { icon: "👷", name: "Employer Liability", desc: "Lindungi perusahaan dari tuntutan hukum tenaga kerja akibat cedera atau kecelakaan kerja di pabrik. Relevan bagi industri padat karya di kawasan Bekasi.", href: "/asuransi-liability/employer-liability" },
-      { icon: "👥", name: "Public Liability", desc: "Lindungi bisnis dari klaim pihak ketiga akibat cedera badan atau kerusakan properti yang terjadi di lokasi usaha atau akibat operasional perusahaan Anda.", href: "/asuransi-liability/public-liability" },
-      { icon: "🏭", name: "Product Liability", desc: "Perlindungan bagi produsen dan distributor dari tuntutan hukum akibat kerugian yang disebabkan oleh produk yang diproduksi atau didistribusikan ke pasaran.", href: "/asuransi-liability/product-liability" },
+      { icon: "👥", name: "Asuransi Public Liability", desc: "Lindungi bisnis dari klaim pihak ketiga akibat cedera badan atau kerusakan properti yang terjadi di lokasi usaha atau akibat operasional perusahaan Anda.", href: "/asuransi-liability/public-liability" },
+      { icon: "⚗️", name: "Asuransi Limbah B3", desc: "Perlindungan tanggung jawab hukum bagi perusahaan manufaktur yang menghasilkan, mengangkut, atau mengelola limbah B3 sesuai regulasi lingkungan hidup yang berlaku.", href: "/asuransi-liability/limbah-b3" },
     ],
   },
   {

@@ -28,7 +28,6 @@ const NAV_CLUSTERS = [
   ]},
   { href: "/asuransi-liability", icon: "🛡️", label: "Liability", sub: [
     { href: "/asuransi-liability/public-liability", label: "Public Liability" },
-    { href: "/asuransi-liability/employer-liability", label: "Employer Liability" },
     { href: "/asuransi-liability/limbah-b3", label: "Limbah B3" },
   ]},
   { href: "/asuransi-surety-bond", icon: "📋", label: "Surety Bond", sub: [
