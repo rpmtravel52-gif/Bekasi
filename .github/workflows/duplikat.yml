@@ -1,0 +1,159 @@
+name: Duplikat Bekasi
+
+on:
+  workflow_dispatch:
+
+jobs:
+  duplikat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run duplikat script
+        env:
+          TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          python3 << 'PYEOF'
+          import json, base64, urllib.request, urllib.error, time, sys
+
+          TOKEN = "$TOKEN"
+          SOURCE = "Rio2612/Jogjaasuransi"
+          TARGET = "Rio2612/Duplikat-Jogja"
+          H = {"Authorization":f"token {TOKEN}","Accept":"application/vnd.github.v3+json","User-Agent":"gha/1.0","Content-Type":"application/json"}
+
+          REPLACEMENTS = [
+            ("asuransijogja.biz.id","asuransibekasi.com"),
+            ("jogjaasuransi.vercel.app","asuransibekasi.com"),
+            ("asuransijogja","asuransibekasi"),
+            ("Daerah Istimewa Yogyakarta","Kota Bekasi"),
+            ("Yogyakarta","Bekasi"),("yogyakarta","bekasi"),
+            ("Jogja","Bekasi"),("JOGJA","BEKASI"),("jogja","bekasi"),
+            ("Jogjaasuransi","AsuransiBekasi"),
+            ("Sleman","Bekasi Utara"),("Bantul","Bekasi Selatan"),
+            ("Gunungkidul","Bekasi Timur"),("Kulon Progo","Bekasi Barat"),
+            ("Kulonprogo","Bekasi Barat"),("Kota Yogyakarta","Kota Bekasi"),
+            ("DIY","Jawa Barat"),
+            ("Rio Mardiansyah","Rio Diansyah"),
+            ('"name": "asuransi-jogja"','"name": "asuransi-bekasi"'),
+            ('"name": "jogjaasuransi"','"name": "asuransibekasi"'),
+            ("Asuransi Lokal Jogja","Asuransi Lokal Bekasi"),
+            ("asuransi lokal jogja","asuransi lokal bekasi"),
+            ("Asuransi Jogja","Asuransi Bekasi"),
+            ("asuransi jogja","asuransi bekasi"),
+          ]
+
+          def api_get(url):
+            req=urllib.request.Request(url,headers=H)
+            try:
+              with urllib.request.urlopen(req,timeout=20) as r: return json.loads(r.read())
+            except urllib.error.HTTPError as e:
+              if e.code==404: return None
+              print(f"GET {e.code}: {url}"); return None
+
+          def api_put(url,payload):
+            body=json.dumps(payload).encode()
+            req=urllib.request.Request(url,data=body,headers=H,method="PUT")
+            try:
+              with urllib.request.urlopen(req,timeout=20) as r: return json.loads(r.read())
+            except urllib.error.HTTPError as e:
+              print(f"PUT {e.code}: {e.read().decode()[:200]}"); return None
+
+          def get_file(repo,path):
+            d=api_get(f"https://api.github.com/repos/{repo}/contents/{path}?ref=main")
+            if d and "content" in d:
+              return base64.b64decode(d["content"]).decode("utf-8",errors="replace"),d.get("sha","")
+            return None,None
+
+          def get_sha(path):
+            d=api_get(f"https://api.github.com/repos/{TARGET}/contents/{path}?ref=main")
+            return d["sha"] if d and "sha" in d else None
+
+          def push(path,content,msg):
+            existing=get_sha(path)
+            p={"message":msg,"content":base64.b64encode(content.encode()).decode(),"branch":"main"}
+            if existing: p["sha"]=existing
+            r=api_put(f"https://api.github.com/repos/{TARGET}/contents/{path}",p)
+            action="✅ updated" if existing else "✅ created"
+            if r: print(f"{action}: {path}")
+            time.sleep(0.4)
+
+          def transform(s):
+            for o,n in REPLACEMENTS: s=s.replace(o,n)
+            return s
+
+          def copy(src,dst=None,msg=None):
+            if dst is None: dst=src
+            if msg is None: msg=f"feat: {src.split('/')[-1]} (Bekasi)"
+            c,_=get_file(SOURCE,src)
+            if c is None: print(f"⚠️  not found: {src}"); return
+            push(dst,transform(c),msg)
+
+          def ls(repo,path):
+            d=api_get(f"https://api.github.com/repos/{repo}/contents/{path}?ref=main")
+            if not isinstance(d,list): return []
+            files=[]
+            for i in d:
+              if i["type"]=="file": files.append(i["path"])
+              elif i["type"]=="dir": files.extend(ls(repo,i["path"]))
+            return files
+
+          # Auth check
+          me=api_get("https://api.github.com/user")
+          print(f"Auth: {me.get('login') if me else 'FAILED'}")
+
+          # 1. Root configs
+          print("\n=== ROOT CONFIGS ===")
+          for f in ["package.json","next.config.ts","next.config.js","tailwind.config.ts","tailwind.config.js","tsconfig.json","postcss.config.mjs","postcss.config.js",".eslintrc.json","vercel.json"]:
+            copy(f,msg=f"chore: {f}")
+
+          # 2. App core
+          print("\n=== APP CORE ===")
+          for f in ["src/app/globals.css","src/app/layout.tsx","src/app/page.tsx","src/app/sitemap.ts","src/app/robots.ts","src/app/not-found.tsx"]:
+            copy(f)
+
+          # 3. Lib/utils/types/hooks
+          print("\n=== LIB & UTILS ===")
+          for d in ["src/lib","src/data","src/utils","src/types","src/constants","src/hooks"]:
+            for f in ls(SOURCE,d): copy(f)
+
+          # 4. Components
+          print("\n=== COMPONENTS ===")
+          for d in ["src/components","components"]:
+            for f in ls(SOURCE,d): copy(f)
+
+          # 5. All pages (non-artikel)
+          print("\n=== PAGES ===")
+          all_app=ls(SOURCE,"src/app")
+          skip_core={"src/app/globals.css","src/app/layout.tsx","src/app/page.tsx","src/app/sitemap.ts","src/app/robots.ts","src/app/not-found.tsx"}
+          for f in all_app:
+            if f in skip_core: continue
+            if "/artikel/" in f.lower() or "/blog/" in f.lower(): continue
+            copy(f)
+
+          # 6. Artikel cara-klaim-asuransi-mobil saja
+          print("\n=== ARTIKEL CARA-KLAIM ===")
+          found=False
+          for ap in ["src/app/artikel/cara-klaim-asuransi-mobil/page.tsx","src/app/blog/cara-klaim-asuransi-mobil/page.tsx","src/app/cara-klaim-asuransi-mobil/page.tsx"]:
+            c,_=get_file(SOURCE,ap)
+            if c:
+              push(ap,transform(c),"feat: artikel cara-klaim-asuransi-mobil (Bekasi)")
+              found=True; break
+          if not found:
+            for f in all_app:
+              if "klaim" in f.lower() and "mobil" in f.lower():
+                copy(f); found=True
+          if not found: print("⚠️  Artikel tidak ditemukan")
+
+          # 7. Public assets (binary)
+          print("\n=== PUBLIC ASSETS ===")
+          for f in ls(SOURCE,"public"):
+            d=api_get(f"https://api.github.com/repos/{SOURCE}/contents/{f}?ref=main")
+            if d and "content" in d:
+              raw=d["content"].replace("\n","")
+              existing=get_sha(f)
+              p={"message":f"assets: {f.split('/')[-1]}","content":raw,"branch":"main"}
+              if existing: p["sha"]=existing
+              r=api_put(f"https://api.github.com/repos/{TARGET}/contents/{f}",p)
+              if r: print(f"✅ asset: {f}")
+              time.sleep(0.5)
+
+          print("\n✅ SELESAI! https://github.com/Rio2612/Duplikat-Jogja")
+          PYEOF
