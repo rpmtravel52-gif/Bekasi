@@ -1,0 +1,137 @@
+import type { Metadata } from "next";
+import { Syne, DM_Sans } from "next/font/google";
+import "./globals.css";
+
+const BASE_URL = "https://asuransibekasi.id";
+
+// Heading font: Syne — dipakai di semua h1–h3, label section, nama brand
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+// Body font: DM Sans — dipakai di semua teks konten, navigasi, footer
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "Asuransi Bekasi – Konsultan Asuransi Kerugian Terpercaya di Bekasi",
+    template: "%s | Asuransi Bekasi",
+  },
+  description:
+    "Asuransi Bekasi – Konsultan asuransi kerugian independen di Bekasi. Melayani asuransi kendaraan, properti, engineering, kargo, liability, dan surety bond untuk personal, UMKM, dan korporasi di kawasan industri Bekasi.",
+  keywords:
+    "asuransi bekasi, asuransi kerugian bekasi, konsultan asuransi bekasi, asuransi mobil bekasi, asuransi kebakaran bekasi, asuransi pabrik bekasi, asuransi kawasan industri jababeka, asuransi properti bekasi",
+  authors: [{ name: "Rio Diansyah" }],
+  alternates: { canonical: BASE_URL },
+  openGraph: {
+    title: "Asuransi Bekasi – Konsultan Asuransi Kerugian Terpercaya",
+    description: "Konsultan asuransi kerugian independen di Bekasi. Konsultasi GRATIS, berpengalaman melayani kawasan industri dan personal.",
+    url: BASE_URL,
+    siteName: "Asuransi Bekasi",
+    locale: "id_ID",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Asuransi Bekasi – Konsultan Asuransi Kerugian Bekasi" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Asuransi Bekasi – Konsultan Asuransi Kerugian Bekasi",
+    description: "Konsultasi asuransi kerugian gratis. Kendaraan, properti, kargo, engineering, liability, surety bond.",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  // verification: { google: "YOUR_GOOGLE_VERIFICATION_TOKEN" },
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const schemaOrg = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "InsuranceAgency"],
+        "@id": `${BASE_URL}/#organization`,
+        "name": "Asuransi Bekasi",
+        "alternateName": "AsuransiBekasi.id",
+        "description": "Konsultan asuransi kerugian independen di Bekasi, melayani personal, UMKM, hingga industri di kawasan Jababeka, MM2100, EJIP, dan Delta Silicon.",
+        "url": BASE_URL,
+        "telephone": "+628131556592",
+        "email": "rio@asuransibekasi.id",
+        "founder": { "@type": "Person", "name": "Rio Diansyah" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bekasi",
+          "addressRegion": "Jawa Barat",
+          "addressCountry": "ID",
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": -6.2383, "longitude": 107.0000 },
+        "areaServed": [
+          { "@type": "City", "name": "Bekasi" },
+          { "@type": "AdministrativeArea", "name": "Jawa Barat" },
+        ],
+        "openingHours": "Mo-Sa 08:00-17:00",
+        "priceRange": "Rp",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Produk Asuransi Kerugian",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asuransi Kendaraan", "url": `${BASE_URL}/asuransi-kendaraan` } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asuransi Properti", "url": `${BASE_URL}/asuransi-properti` } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asuransi Engineering", "url": `${BASE_URL}/asuransi-engineering` } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asuransi Kargo", "url": `${BASE_URL}/asuransi-kargo` } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asuransi Liability", "url": `${BASE_URL}/asuransi-liability` } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surety Bond", "url": `${BASE_URL}/asuransi-surety-bond` } },
+          ],
+        },
+        "sameAs": [`https://wa.me/628131556592`],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${BASE_URL}/#website`,
+        "url": BASE_URL,
+        "name": "Asuransi Bekasi",
+        "publisher": { "@id": `${BASE_URL}/#organization` },
+        "inLanguage": "id-ID",
+      },
+    ],
+  };
+
+  return (
+    <html lang="id" className={`${syne.variable} ${dmSans.variable}`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }} />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+            <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}',{page_path:window.location.pathname});` }} />
+          </>
+        )}
+      </head>
+      <body className="antialiased">{children}</body>
+    </html>
+  );
+}
