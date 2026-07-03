@@ -7,8 +7,8 @@ import { KONTAK } from "@/lib/data";
 const NAV_CLUSTERS = [
   { href: "/asuransi-kendaraan", icon: "🚗", label: "Asuransi Kendaraan", sub: [
     { href: "/asuransi-kendaraan/mobil", label: "Asuransi Mobil" },
-    { href: "/asuransi-kendaraan/dump-truk-niaga", label: "Truk & Kendaraan Niaga" },
-    { href: "/asuransi-kendaraan/armada-fleet", label: "Armada & Fleet" },
+    { href: "/asuransi-kendaraan/bus", label: "Asuransi Bus" },
+    { href: "/asuransi-kendaraan/truk-kendaraan-niaga", label: "Truk & Kendaraan Niaga" },
   ]},
   { href: "/asuransi-properti", icon: "🏠", label: "Asuransi Properti", sub: [
     { href: "/asuransi-properti/property-all-risk", label: "Property All Risk (PAR)" },

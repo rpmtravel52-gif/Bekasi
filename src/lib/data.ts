@@ -14,9 +14,9 @@ export const CLUSTERS: Cluster[] = [
   {
     id: "kendaraan", label: "Kendaraan", icon: "🚗",
     produk: [
-      { icon: "🚗", name: "Asuransi Mobil Bekasi", desc: "Perlindungan All Risk maupun TLO untuk kendaraan pribadi Anda. Tersedia untuk mobil konvensional dan listrik dengan premi sesuai tarif OJK. Klaim mudah, proses cepat.", href: "#kalkulator" },
-      { icon: "🚛", name: "Asuransi Truk & Kendaraan Niaga", desc: "Proteksi truk, box, dan kendaraan operasional untuk pelaku usaha ekspedisi dan pergudangan di kawasan industri Bekasi seperti Jababeka, MM2100, dan EJIP.", href: "/asuransi-kendaraan/dump-truk-niaga" },
-      { icon: "🚐", name: "Asuransi Armada Kendaraan", desc: "Paket asuransi fleet untuk perusahaan logistik dan distribusi dengan banyak kendaraan operasional. Pengelolaan polis lebih mudah, premi lebih efisien dibanding polis satuan.", href: "/asuransi-kendaraan/armada-fleet" },
+      { icon: "🚗", name: "Asuransi Mobil", desc: "Perlindungan All Risk maupun TLO untuk kendaraan pribadi Anda. Tersedia untuk mobil konvensional dan listrik dengan premi sesuai tarif OJK. Klaim mudah, proses cepat.", href: "/asuransi-kendaraan/mobil" },
+      { icon: "🚌", name: "Asuransi Bus", desc: "Proteksi bus pariwisata, bus karyawan, dan bus antar-jemput untuk operator transportasi di Bekasi. Termasuk perlindungan tanggung jawab terhadap penumpang.", href: "/asuransi-kendaraan/bus" },
+      { icon: "🚛", name: "Asuransi Truk & Kendaraan Niaga", desc: "Proteksi truk, box, dan kendaraan operasional untuk pelaku usaha ekspedisi dan pergudangan di kawasan industri Bekasi seperti Jababeka, MM2100, dan EJIP.", href: "/asuransi-kendaraan/truk-kendaraan-niaga" },
     ],
   },
   {
