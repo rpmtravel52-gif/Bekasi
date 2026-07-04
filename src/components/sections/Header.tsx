@@ -18,9 +18,12 @@ const NAV_CLUSTERS = [
     { href: "/asuransi-properti/rumah", label: "Asuransi Rumah" },
   ]},
   { href: "/asuransi-engineering", icon: "⚙️", label: "Engineering", sub: [
-    { href: "/asuransi-engineering/contractor-all-risk", label: "Contractor All Risk" },
-    { href: "/asuransi-engineering/erection-all-risk", label: "Erection All Risk" },
-    { href: "/asuransi-engineering/machinery-breakdown", label: "Machinery Breakdown" },
+    { href: "/asuransi-engineering/contractor-all-risk", label: "Contractor All Risk (CAR)" },
+    { href: "/asuransi-engineering/cecr", label: "CECR" },
+  ]},
+  { href: "/asuransi-machinery", icon: "🔧", label: "Machinery", sub: [
+    { href: "/asuransi-machinery/machinery-breakdown", label: "Machinery Breakdown" },
+    { href: "/asuransi-machinery/alat-berat", label: "Asuransi Alat Berat (CPM)" },
   ]},
   { href: "/asuransi-kargo", icon: "📦", label: "Asuransi Kargo", sub: [
     { href: "/asuransi-kargo/pengiriman-barang", label: "Pengiriman Barang" },

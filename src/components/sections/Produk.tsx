@@ -7,6 +7,7 @@ const PILLAR_HREFS: Record<string, string> = {
   kendaraan: "/asuransi-kendaraan",
   properti: "/asuransi-properti",
   engineering: "/asuransi-engineering",
+  machinery: "/asuransi-machinery",
   kargo: "/asuransi-kargo",
   liability: "/asuransi-liability",
   surety: "/asuransi-surety-bond",

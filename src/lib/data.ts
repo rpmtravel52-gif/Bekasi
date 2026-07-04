@@ -33,8 +33,14 @@ export const CLUSTERS: Cluster[] = [
     id: "engineering", label: "Engineering", icon: "⚙️",
     produk: [
       { icon: "🏗️", name: "Contractor All Risk (CAR)", desc: "Perlindungan menyeluruh untuk proyek konstruksi sipil dari awal hingga serah terima. Melindungi pekerjaan, material, peralatan, dan tanggung jawab terhadap pihak ketiga.", href: "/asuransi-engineering/contractor-all-risk" },
-      { icon: "⚙️", name: "Erection All Risk (EAR)", desc: "Asuransi untuk pekerjaan instalasi mesin dan peralatan pabrik. Cocok untuk kontraktor MEP dan perusahaan manufaktur di kawasan industri Bekasi.", href: "/asuransi-engineering/erection-all-risk" },
-      { icon: "🔧", name: "Machinery Breakdown (MB)", desc: "Perlindungan mesin produksi dari kerusakan mendadak akibat gangguan mekanis atau elektris. Menjaga kelangsungan operasional pabrik Anda di Bekasi.", href: "/asuransi-engineering/machinery-breakdown" },
+      { icon: "🏛️", name: "CECR (Civil Engineering Completed Risks)", desc: "Perlindungan untuk proyek sipil yang telah selesai dibangun, seperti jalan, jembatan, dan bangunan infrastruktur di masa pemeliharaan dan operasional awal.", href: "/asuransi-engineering/cecr" },
+    ],
+  },
+  {
+    id: "machinery", label: "Machinery", icon: "🔧",
+    produk: [
+      { icon: "🔧", name: "Machinery Breakdown (MB)", desc: "Perlindungan mesin produksi dari kerusakan mendadak akibat gangguan mekanis atau elektris. Menjaga kelangsungan operasional pabrik Anda di Bekasi.", href: "/asuransi-machinery/machinery-breakdown" },
+      { icon: "🚜", name: "Asuransi Alat Berat (CPM)", desc: "Contractor's Plant & Machinery — perlindungan alat berat seperti excavator, crane, dan forklift dari kerusakan fisik dan kegagalan mekanis di lokasi proyek maupun pabrik.", href: "/asuransi-machinery/alat-berat" },
     ],
   },
   {

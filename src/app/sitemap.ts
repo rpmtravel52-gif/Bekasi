@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asuransi-liability",
     "/asuransi-liability/public-liability",
     "/asuransi-liability/limbah-b3",
+    "/asuransi-engineering",
+    "/asuransi-engineering/contractor-all-risk",
+    "/asuransi-engineering/cecr",
+    "/asuransi-machinery",
+    "/asuransi-machinery/machinery-breakdown",
+    "/asuransi-machinery/alat-berat",
   ];
   return [
     {
@@ -30,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${path}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
-      priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan"].includes(path) ? 0.9 : 0.8,
+      priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan", "/asuransi-engineering", "/asuransi-machinery"].includes(path) ? 0.9 : 0.8,
     })),
   ];
 }
