@@ -46,9 +46,8 @@ export const CLUSTERS: Cluster[] = [
   {
     id: "kargo", label: "Kargo", icon: "📦",
     produk: [
-      { icon: "📦", name: "Asuransi Kargo Darat", desc: "Perlindungan barang kiriman via truk dari risiko kecelakaan, pencurian, dan kerusakan selama perjalanan. Cocok untuk pelaku ekspedisi dan distribusi di kawasan pergudangan Bekasi.", href: "/asuransi-kargo/pengiriman-barang" },
-      { icon: "✈️", name: "Asuransi Kargo Udara", desc: "Jaminan perlindungan kargo yang dikirim via jalur udara. Cocok untuk pengiriman barang bernilai tinggi yang membutuhkan kecepatan dan keamanan ekstra.", href: "/asuransi-kargo/kargo-udara-laut" },
-      { icon: "🚢", name: "Marine Cargo Insurance", desc: "Proteksi pengiriman barang melalui jalur laut untuk importir dan eksportir yang berbasis di kawasan industri Bekasi maupun sekitar Jakarta.", href: "/asuransi-kargo/kargo-udara-laut" },
+      { icon: "📦", name: "Asuransi Kargo Darat", desc: "Perlindungan barang kiriman via truk dari risiko kecelakaan, pencurian, dan kerusakan selama perjalanan. Cocok untuk pelaku ekspedisi dan distribusi di kawasan pergudangan Bekasi.", href: "/asuransi-kargo/kargo-darat" },
+      { icon: "🚢", name: "Marine Cargo Insurance (Laut & Udara)", desc: "Proteksi pengiriman barang melalui jalur laut dan udara untuk importir dan eksportir yang berbasis di kawasan industri Bekasi maupun sekitar Jakarta.", href: "/asuransi-kargo/marine-cargo" },
     ],
   },
   {
@@ -64,6 +63,8 @@ export const CLUSTERS: Cluster[] = [
       { icon: "📋", name: "Jaminan Penawaran (Bid Bond)", desc: "Jaminan bagi peserta tender bahwa kontraktor akan melaksanakan kontrak jika menang. Wajib untuk mengikuti lelang proyek pemerintah maupun swasta di Bekasi.", href: "/asuransi-surety-bond/jaminan-penawaran" },
       { icon: "🤝", name: "Jaminan Pelaksanaan (Performance Bond)", desc: "Menjamin kontraktor menyelesaikan proyek sesuai kontrak. Wajib bagi kontraktor yang mengerjakan proyek pemerintah, BUMN, maupun proyek swasta berskala besar.", href: "/asuransi-surety-bond/jaminan-pelaksanaan" },
       { icon: "💰", name: "Jaminan Uang Muka (Advance Payment Bond)", desc: "Jaminan atas uang muka yang diberikan pemberi kerja kepada kontraktor. Melindungi pengguna jasa dari risiko penyalahgunaan dana awal proyek.", href: "/asuransi-surety-bond/jaminan-uang-muka" },
+      { icon: "🔧", name: "Jaminan Pemeliharaan (Maintenance Bond)", desc: "Jaminan bahwa kontraktor akan memperbaiki cacat/kerusakan yang timbul selama masa pemeliharaan setelah proyek diserahterimakan.", href: "/asuransi-surety-bond/jaminan-pemeliharaan" },
+      { icon: "🛃", name: "Custom Bond OB23", desc: "Jaminan kepabeanan formulir OB-23 sebagai pengganti pembayaran tunai bea masuk/pajak impor. Relevan bagi importir dan pabrik di kawasan industri Bekasi yang rutin mengimpor bahan baku.", href: "/asuransi-surety-bond/custom-bond-ob23" },
     ],
   },
 ];

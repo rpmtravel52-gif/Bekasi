@@ -24,6 +24,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asuransi-machinery",
     "/asuransi-machinery/machinery-breakdown",
     "/asuransi-machinery/alat-berat",
+    "/asuransi-kargo",
+    "/asuransi-kargo/kargo-darat",
+    "/asuransi-kargo/marine-cargo",
+    "/asuransi-surety-bond",
+    "/asuransi-surety-bond/jaminan-penawaran",
+    "/asuransi-surety-bond/jaminan-pelaksanaan",
+    "/asuransi-surety-bond/jaminan-uang-muka",
+    "/asuransi-surety-bond/jaminan-pemeliharaan",
+    "/asuransi-surety-bond/custom-bond-ob23",
   ];
   return [
     {
@@ -36,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${path}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
-      priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan", "/asuransi-engineering", "/asuransi-machinery"].includes(path) ? 0.9 : 0.8,
+      priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan", "/asuransi-engineering", "/asuransi-machinery", "/asuransi-kargo", "/asuransi-surety-bond"].includes(path) ? 0.9 : 0.8,
     })),
   ];
 }

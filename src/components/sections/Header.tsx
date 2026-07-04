@@ -26,8 +26,8 @@ const NAV_CLUSTERS = [
     { href: "/asuransi-machinery/alat-berat", label: "Asuransi Alat Berat (CPM)" },
   ]},
   { href: "/asuransi-kargo", icon: "📦", label: "Asuransi Kargo", sub: [
-    { href: "/asuransi-kargo/pengiriman-barang", label: "Pengiriman Barang" },
-    { href: "/asuransi-kargo/kargo-udara-laut", label: "Kargo Udara & Laut" },
+    { href: "/asuransi-kargo/kargo-darat", label: "Kargo Darat" },
+    { href: "/asuransi-kargo/marine-cargo", label: "Marine Cargo (Laut & Udara)" },
   ]},
   { href: "/asuransi-liability", icon: "🛡️", label: "Liability", sub: [
     { href: "/asuransi-liability/public-liability", label: "Public Liability" },
@@ -37,6 +37,8 @@ const NAV_CLUSTERS = [
     { href: "/asuransi-surety-bond/jaminan-penawaran", label: "Jaminan Penawaran" },
     { href: "/asuransi-surety-bond/jaminan-pelaksanaan", label: "Jaminan Pelaksanaan" },
     { href: "/asuransi-surety-bond/jaminan-uang-muka", label: "Jaminan Uang Muka" },
+    { href: "/asuransi-surety-bond/jaminan-pemeliharaan", label: "Jaminan Pemeliharaan" },
+    { href: "/asuransi-surety-bond/custom-bond-ob23", label: "Custom Bond OB23" },
   ]},
 ];
 
