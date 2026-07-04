@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Property All Risk (PAR) Bekasi – Proteksi Pabrik & Gedung Komersial",
@@ -53,6 +54,8 @@ export default function ParPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 20.000.000 – Rp 37.500.000", sublabel: "untuk total pertanggungan Rp 25 miliar" }}
       simulasiCatatan="Rate final tergantung hasil survei risiko fisik (fire protection, jarak ke pemadam kebakaran, riwayat klaim) dan cakupan perluasan yang dipilih. Hubungi kami untuk penawaran resmi sesuai kondisi pabrik Anda."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Property All Risk (PAR) untuk pabrik/gedung saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_PROPERTI}
+      pengecualianNote={NOTE_PROPERTI}
       syaratItems={[
         "Fotokopi identitas pemilik / penanggung jawab perusahaan (KTP/NIB)",
         "Data teknis bangunan: luas, tahun bangun, kelas konstruksi",

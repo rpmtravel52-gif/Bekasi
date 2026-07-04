@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Jaminan Uang Muka Bekasi – Advance Payment Bond Kontraktor",
@@ -48,6 +49,8 @@ export default function JaminanUangMukaPage() {
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 20.000.000 – Rp 50.000.000", sublabel: "untuk nilai jaminan Rp 2 miliar, 12 bulan" }}
       simulasiCatatan="Nilai jaminan umumnya menyusut mengikuti pengembalian uang muka melalui pemotongan termin pembayaran, sehingga biaya bisa disesuaikan secara proporsional pada perpanjangan jaminan."
       simulasiWaMsg="Halo Pak Rio, saya ingin mengajukan Jaminan Uang Muka (Advance Payment Bond) untuk proyek saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_SURETY}
+      pengecualianNote={NOTE_SURETY}
       syaratItems={[
         "Fotokopi identitas perusahaan & legalitas (NIB, SIUJK, Akta Perusahaan)",
         "Kontrak kerja proyek yang mencantumkan klausul uang muka",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_LIABILITY, NOTE_LIABILITY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Public Liability Bekasi – Tanggung Gugat Pihak Ketiga",
@@ -52,6 +53,8 @@ export default function PublicLiabilityPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 2.500.000 – Rp 8.000.000", sublabel: "tergantung jenis & skala usaha" }}
       simulasiCatatan="Rate sangat dipengaruhi jenis usaha (pabrik kimia berbeda dengan kantor biasa), jumlah pengunjung/karyawan, dan riwayat klaim. Hubungi kami untuk penawaran sesuai profil bisnis Anda."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi Public Liability untuk bisnis saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_LIABILITY}
+      pengecualianNote={NOTE_LIABILITY}
       syaratItems={[
         "Fotokopi identitas penanggung jawab & legalitas perusahaan (NIB/SIUP/Akta)",
         "Deskripsi jenis usaha dan aktivitas operasional",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Jaminan Penawaran Bekasi – Bid Bond untuk Tender Proyek",
@@ -48,6 +49,8 @@ export default function JaminanPenawaranPage() {
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 500.000 – Rp 3.000.000", sublabel: "untuk nilai jaminan Rp 50-150 juta" }}
       simulasiCatatan="Biaya penerbitan (bukan premi tahunan seperti asuransi biasa) dihitung sekali untuk masa berlaku jaminan sesuai jangka waktu tender. Nilai jaminan mengikuti syarat yang ditetapkan panitia lelang dalam dokumen tender."
       simulasiWaMsg="Halo Pak Rio, saya ingin mengajukan Jaminan Penawaran (Bid Bond) untuk tender proyek yang saya ikuti. Mohon info lebih lanjut."
+      prosesItems={PROSES_SURETY}
+      pengecualianNote={NOTE_SURETY}
       syaratItems={[
         "Fotokopi identitas perusahaan & legalitas (NIB, SIUJK, Akta Perusahaan)",
         "Dokumen lelang/tender (RKS, undangan lelang, atau pengumuman resmi)",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Kebakaran Bekasi – Ruko, Toko & Bangunan Usaha",
@@ -53,6 +54,8 @@ export default function KebakaranPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 500.000 – Rp 1.200.000", sublabel: "untuk pertanggungan Rp 1 miliar" }}
       simulasiCatatan="Rate dipengaruhi kelas konstruksi, lokasi, dan jenis usaha yang berjalan di dalam bangunan (misal: usaha dengan bahan mudah terbakar akan berpremi lebih tinggi)."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi kebakaran untuk ruko/toko saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_PROPERTI}
+      pengecualianNote={NOTE_PROPERTI}
       syaratItems={[
         "Fotokopi KTP pemilik bangunan / penanggung jawab usaha",
         "Bukti kepemilikan bangunan (sertifikat/AJB) atau surat sewa jika disewa",

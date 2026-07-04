@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_KARGO, NOTE_KARGO } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Marine Cargo Insurance Bekasi – Impor Ekspor Laut & Udara",
@@ -53,6 +54,8 @@ export default function MarineCargoPage() {
       simulasiHighlight={{ label: "Estimasi Premi per Pengiriman", value: "Rp 2.560.000 – Rp 8.000.000", sublabel: "untuk nilai barang ± Rp 3,2 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis barang, rute pelayaran/penerbangan, jenis kemasan (kontainer/curah), dan klausul ICC yang dipilih. Untuk importir rutin, tersedia skema polis tahunan (open cover)."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Marine Cargo Insurance untuk impor/ekspor barang usaha saya. Mohon info lebih lanjut."
+      prosesItems={PROSES_KARGO}
+      pengecualianNote={NOTE_KARGO}
       syaratItems={[
         "Fotokopi identitas & legalitas perusahaan importir/eksportir (NIB/API-U/API-P)",
         "Invoice dan packing list barang yang dikirim",

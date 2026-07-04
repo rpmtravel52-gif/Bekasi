@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Custom Bond OB23 Bekasi – Jaminan Kepabeanan Importir",
@@ -48,6 +49,8 @@ export default function CustomBondOb23Page() {
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 7.500.000 – Rp 22.500.000", sublabel: "untuk nilai jaminan Rp 1,5 miliar" }}
       simulasiCatatan="Rate dipengaruhi profil kredibilitas importir, jenis fasilitas kepabeanan yang digunakan, dan jangka waktu jaminan. Importir dengan status AEO (Authorized Economic Operator) umumnya mendapat rate lebih kompetitif."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Custom Bond OB23 untuk kebutuhan impor perusahaan saya di kawasan industri Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_SURETY}
+      pengecualianNote={NOTE_SURETY}
       syaratItems={[
         "Fotokopi identitas & legalitas perusahaan importir (NIB, API-U/API-P)",
         "Nomor Induk Berusaha dan Angka Pengenal Importir",

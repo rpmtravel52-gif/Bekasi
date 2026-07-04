@@ -40,6 +40,7 @@ interface Props {
 
   pengecualianTitle?: string;
   pengecualianItems: string[];
+  pengecualianNote?: string;
 
   varianTitle?: string;
   varianSubtitle?: string;
@@ -148,7 +149,7 @@ export default function ProdukDetailPage(props: Props) {
               ))}
             </div>
             <p className="text-xs text-[#64748B] mt-4 leading-relaxed">
-              Kami selalu menjelaskan seluruh klausul pengecualian secara rinci dan transparan sebelum Anda memutuskan membeli polis — tidak ada &ldquo;kejutan&rdquo; saat klaim.
+              {props.pengecualianNote ?? "Kami selalu menjelaskan seluruh klausul pengecualian secara rinci dan transparan sebelum Anda memutuskan membeli polis."}
             </p>
           </div>
         </div>

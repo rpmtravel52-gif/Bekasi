@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Jaminan Pelaksanaan Bekasi – Performance Bond Kontraktor",
@@ -48,6 +49,8 @@ export default function JaminanPelaksanaanPage() {
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 5.000.000 – Rp 12.500.000", sublabel: "untuk nilai jaminan Rp 500 juta, 12 bulan" }}
       simulasiCatatan="Rate dipengaruhi rekam jejak kontraktor (track record proyek sebelumnya), kondisi keuangan perusahaan, dan kompleksitas proyek. Kontraktor dengan riwayat baik umumnya mendapat rate lebih kompetitif."
       simulasiWaMsg="Halo Pak Rio, saya ingin mengajukan Jaminan Pelaksanaan (Performance Bond) untuk proyek yang saya menangkan di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_SURETY}
+      pengecualianNote={NOTE_SURETY}
       syaratItems={[
         "Fotokopi identitas perusahaan & legalitas (NIB, SIUJK, Akta Perusahaan)",
         "Surat Penunjukan Pemenang (SPPBJ) dari pemberi kerja",

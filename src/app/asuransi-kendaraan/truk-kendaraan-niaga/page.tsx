@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_KENDARAAN, NOTE_KENDARAAN } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Truk & Kendaraan Niaga Bekasi – Ekspedisi & Logistik",
@@ -70,6 +71,8 @@ export default function TrukPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 12.000.000 – Rp 18.000.000", sublabel: "untuk 1 unit truk senilai Rp 400 juta" }}
       simulasiCatatan="Rate kendaraan niaga umumnya lebih tinggi dari kendaraan pribadi karena intensitas penggunaan. Untuk armada 5+ unit, hubungi kami untuk penawaran fleet insurance yang lebih efisien."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi truk/kendaraan niaga untuk usaha ekspedisi saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_KENDARAAN}
+      pengecualianNote={NOTE_KENDARAAN}
       syaratItems={[
         "Fotokopi KTP pemilik / penanggung jawab perusahaan",
         "Fotokopi STNK dan KIR truk yang masih berlaku",

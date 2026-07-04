@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_MACHINERY, NOTE_MACHINERY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Machinery Breakdown Bekasi – Proteksi Mesin Produksi",
@@ -53,6 +54,8 @@ export default function MachineryBreakdownPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 20.000.000 – Rp 48.000.000", sublabel: "untuk pertanggungan Rp 8 miliar" }}
       simulasiCatatan="Rate sangat dipengaruhi jenis, usia, dan kompleksitas mesin, serta riwayat maintenance dan klaim sebelumnya. Mesin yang lebih tua umumnya memerlukan rate lebih tinggi."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi Machinery Breakdown untuk mesin produksi pabrik saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_MACHINERY}
+      pengecualianNote={NOTE_MACHINERY}
       syaratItems={[
         "Fotokopi identitas penanggung jawab & legalitas perusahaan (NIB)",
         "Daftar mesin yang diasuransikan: merek, tipe, tahun pembuatan, nilai perolehan",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Rumah Bekasi – Kebakaran, Pencurian & Banjir",
@@ -53,6 +54,8 @@ export default function RumahPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 375.000 – Rp 750.000", sublabel: "untuk pertanggungan Rp 750 juta" }}
       simulasiCatatan="Rate lebih tinggi jika menambahkan perluasan banjir, tergantung riwayat genangan di lokasi rumah. Kami bantu cek profil risiko lokasi Anda secara gratis."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi rumah tinggal saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_PROPERTI}
+      pengecualianNote={NOTE_PROPERTI}
       syaratItems={[
         "Fotokopi KTP pemilik rumah",
         "Bukti kepemilikan rumah (sertifikat/AJB) atau data KPR jika masih kredit",

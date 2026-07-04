@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Gudang Bekasi – Warehouse, Stok Barang & Pergudangan",
@@ -71,6 +72,8 @@ export default function GudangPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 5.000.000 – Rp 10.000.000", sublabel: "untuk pertanggungan Rp 5 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis barang yang disimpan (mudah terbakar atau tidak), sistem proteksi kebakaran gudang, dan skema nilai pertanggungan yang dipilih."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi gudang/warehouse saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_PROPERTI}
+      pengecualianNote={NOTE_PROPERTI}
       syaratItems={[
         "Fotokopi identitas pemilik / penanggung jawab usaha (KTP/NIB)",
         "Data teknis bangunan gudang: luas, tahun bangun, kelas konstruksi",

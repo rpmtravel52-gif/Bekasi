@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Pabrik Bekasi – Jababeka, MM2100, EJIP & Delta Silicon",
@@ -53,6 +54,8 @@ export default function PabrikPage() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 28.000.000 – Rp 63.000.000", sublabel: "untuk total pertanggungan Rp 35 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis industri (misal: kimia dan tekstil berpremi lebih tinggi dari elektronik ringan), sistem proteksi kebakaran, dan riwayat klaim pabrik."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi pabrik saya di kawasan industri Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_PROPERTI}
+      pengecualianNote={NOTE_PROPERTI}
       syaratItems={[
         "Fotokopi identitas penanggung jawab & dokumen legalitas perusahaan (NIB/SIUP)",
         "Data teknis bangunan pabrik: luas, tahun bangun, kelas konstruksi",

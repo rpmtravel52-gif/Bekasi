@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_ENGINEERING, NOTE_ENGINEERING } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Contractor All Risk (CAR) Bekasi – Asuransi Proyek Konstruksi",
@@ -53,6 +54,8 @@ export default function CarPage() {
       simulasiHighlight={{ label: "Estimasi Premi Total Proyek", value: "Rp 37.500.000 – Rp 87.500.000", sublabel: "untuk nilai kontrak Rp 25 miliar, 12 bulan" }}
       simulasiCatatan="Rate dipengaruhi jenis konstruksi, durasi proyek, lokasi, dan riwayat klaim kontraktor. Untuk proyek dengan risiko tinggi (dekat bangunan eksisting, lokasi rawan banjir), rate dapat lebih tinggi."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Contractor All Risk (CAR) untuk proyek konstruksi saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_ENGINEERING}
+      pengecualianNote={NOTE_ENGINEERING}
       syaratItems={[
         "Fotokopi identitas kontraktor/pemilik proyek & legalitas perusahaan (NIB/SIUJK)",
         "Kontrak kerja proyek (nilai kontrak dan jangka waktu pelaksanaan)",

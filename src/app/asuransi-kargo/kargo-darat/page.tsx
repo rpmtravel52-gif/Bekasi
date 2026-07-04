@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_KARGO, NOTE_KARGO } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Kargo Darat Bekasi – Ekspedisi & Distribusi",
@@ -52,6 +53,8 @@ export default function KargoDaratPage() {
       simulasiHighlight={{ label: "Estimasi Premi per Pengiriman", value: "Rp 250.000 – Rp 750.000", sublabel: "untuk nilai barang Rp 500 juta" }}
       simulasiCatatan="Untuk frekuensi pengiriman tinggi, tersedia skema polis tahunan (open cover) yang lebih efisien dibanding membeli polis per pengiriman. Rate dipengaruhi jenis barang, rute, dan riwayat klaim."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi kargo darat untuk pengiriman barang usaha saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_KARGO}
+      pengecualianNote={NOTE_KARGO}
       syaratItems={[
         "Fotokopi identitas pengirim/penanggung jawab usaha",
         "Data jenis dan nilai barang yang dikirim",

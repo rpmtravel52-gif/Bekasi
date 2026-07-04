@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_LIABILITY, NOTE_LIABILITY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Limbah B3 Bekasi – Liability Pencemaran Lingkungan Industri",
@@ -53,6 +54,8 @@ export default function LimbahB3Page() {
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 15.000.000 – Rp 40.000.000", sublabel: "tergantung jenis & volume limbah B3" }}
       simulasiCatatan="Rate sangat dipengaruhi jenis dan volume limbah B3 yang dihasilkan, sistem pengelolaan limbah di lokasi (IPAL, TPS B3), dan riwayat kepatuhan lingkungan perusahaan. Umumnya memerlukan environmental risk assessment sebelum penawaran final."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi Limbah B3 untuk pabrik saya di kawasan industri Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_LIABILITY}
+      pengecualianNote={NOTE_LIABILITY}
       syaratItems={[
         "Fotokopi identitas penanggung jawab & legalitas perusahaan (NIB/Izin Lingkungan)",
         "Dokumen Izin Pengelolaan Limbah B3 / TPS B3 (jika ada)",

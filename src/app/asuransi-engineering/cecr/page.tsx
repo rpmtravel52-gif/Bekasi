@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
+import { PROSES_ENGINEERING, NOTE_ENGINEERING } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi CECR Bekasi – Civil Engineering Completed Risks",
@@ -52,6 +53,8 @@ export default function CecrPage() {
       simulasiHighlight={{ label: "Estimasi Premi Masa Pemeliharaan", value: "Rp 6.400.000 – Rp 16.000.000", sublabel: "untuk nilai proyek Rp 8 miliar, 12 bulan" }}
       simulasiCatatan="Rate dipengaruhi jenis infrastruktur, kondisi lingkungan sekitar (rawan banjir/longsor), dan durasi masa pemeliharaan yang disepakati dalam kontrak."
       simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi CECR untuk proyek infrastruktur saya di Bekasi. Mohon info lebih lanjut."
+      prosesItems={PROSES_ENGINEERING}
+      pengecualianNote={NOTE_ENGINEERING}
       syaratItems={[
         "Fotokopi identitas pemilik proyek/kontraktor & legalitas perusahaan",
         "Dokumen serah terima proyek (Provisional Hand Over) dari kontraktor",
