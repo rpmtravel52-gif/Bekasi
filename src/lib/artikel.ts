@@ -66,7 +66,50 @@ export const ARTIKEL_LIST: ArtikelMeta[] = [
     readTime: "6 menit",
     heroColor: "green",
   },
+  {
+    slug: "kenapa-pabrik-kawasan-industri-bekasi-wajib-public-liability",
+    title: "Kenapa Pabrik di Kawasan Industri Bekasi Wajib Punya Public Liability",
+    excerpt: "Ledakan SPBE Cimuning menewaskan 6 orang dan menghanguskan puluhan bangunan warga — sebulan berselang, tuntutan ganti rugi Rp7,6 miliar masih tertahan di meja administrasi. Ini yang perlu dipahami pemilik pabrik soal risiko pihak ketiga.",
+    cluster: "liability",
+    clusterLabel: "Asuransi Liability",
+    publishedDate: "2026-07-06",
+    updatedDate: "2026-07-06",
+    readTime: "8 menit",
+    heroColor: "blue",
+  },
+  {
+    slug: "aturan-limbah-b3-pp-22-2021-industri-manufaktur-bekasi",
+    title: "Mengenal Aturan Limbah B3 (PP 22/2021) untuk Industri Manufaktur Bekasi",
+    excerpt: "KLH menyegel dua perusahaan pengelola limbah B3 di Kabupaten Bekasi karena tak punya persetujuan teknis. Ini kewajiban yang wajib dipenuhi perusahaan manufaktur sesuai PP No. 22 Tahun 2021 — dan konsekuensi jika lalai.",
+    cluster: "liability",
+    clusterLabel: "Asuransi Liability",
+    publishedDate: "2026-07-06",
+    updatedDate: "2026-07-06",
+    readTime: "8 menit",
+    heroColor: "amber",
+  },
+  {
+    slug: "studi-kasus-tuntutan-pencemaran-lingkungan-bekasi",
+    title: "Studi Kasus: Berapa Besar Tuntutan Pencemaran Lingkungan Bisa Terjadi?",
+    excerpt: "Dari denda pidana Rp10 miliar hingga penyegelan pabrik — tiga kasus pencemaran limbah B3 di Bekasi menunjukkan bahwa 'sekadar kena tegur' adalah asumsi yang sangat mahal harganya.",
+    cluster: "liability",
+    clusterLabel: "Asuransi Liability",
+    publishedDate: "2026-07-06",
+    updatedDate: "2026-07-06",
+    readTime: "9 menit",
+    heroColor: "charcoal",
+  },
 ];
+
+export const CLUSTER_HREF: Record<ArtikelMeta["cluster"], string> = {
+  properti: "/asuransi-properti",
+  kendaraan: "/asuransi-kendaraan",
+  liability: "/asuransi-liability",
+  engineering: "/asuransi-engineering",
+  machinery: "/asuransi-machinery",
+  kargo: "/asuransi-kargo",
+  surety: "/asuransi-surety-bond",
+};
 
 export function getArtikelBySlug(slug: string) {
   return ARTIKEL_LIST.find((a) => a.slug === slug);

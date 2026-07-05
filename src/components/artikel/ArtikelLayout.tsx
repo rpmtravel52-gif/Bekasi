@@ -1,7 +1,7 @@
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 import Link from "next/link";
-import type { ArtikelMeta } from "@/lib/artikel";
+import { CLUSTER_HREF, type ArtikelMeta } from "@/lib/artikel";
 
 const HERO_THEMES: Record<ArtikelMeta["heroColor"], { bg: string; badgeBg: string; badgeText: string; accent: string }> = {
   navy:     { bg: "bg-navy",       badgeBg: "bg-gold/10 border-gold/30",      badgeText: "text-gold3",   accent: "text-gold" },
@@ -39,7 +39,7 @@ export default function ArtikelLayout({ meta, breadcrumbLabel, heroBadge, heroTi
             <span className="text-gold/60">›</span>
             <Link href="/artikel" className="hover:text-gold transition-colors no-underline">Artikel</Link>
             <span className="text-gold/60">›</span>
-            <Link href="/asuransi-properti" className="hover:text-gold transition-colors no-underline">{meta.clusterLabel}</Link>
+            <Link href={CLUSTER_HREF[meta.cluster]} className="hover:text-gold transition-colors no-underline">{meta.clusterLabel}</Link>
             <span className="text-gold/60">›</span>
             <span className="text-navy font-semibold">{breadcrumbLabel}</span>
           </div>

@@ -39,6 +39,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/artikel/par-vs-kebakaran-gudang-bekasi",
     "/artikel/kesalahan-nilai-pertanggungan-rumah-bekasi",
     "/artikel/panduan-asuransi-ruko-bekasi",
+    "/artikel/kenapa-pabrik-kawasan-industri-bekasi-wajib-public-liability",
+    "/artikel/aturan-limbah-b3-pp-22-2021-industri-manufaktur-bekasi",
+    "/artikel/studi-kasus-tuntutan-pencemaran-lingkungan-bekasi",
   ];
   return [
     {
