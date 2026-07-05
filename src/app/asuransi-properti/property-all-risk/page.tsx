@@ -71,6 +71,10 @@ export default function ParPage() {
         { q: "Apakah PAR bisa diperluas dengan banjir dan gempa?", a: "Bisa, sebagai perluasan tambahan dengan surcharge premi. Untuk pabrik di kawasan Bekasi yang berdekatan dengan aliran sungai, perluasan banjir sangat direkomendasikan." },
         { q: "Berapa lama proses penerbitan polis PAR?", a: "Untuk pertanggungan besar, biasanya perlu survei risiko fisik terlebih dahulu oleh surveyor perusahaan asuransi. Proses dari survei hingga polis terbit umumnya 5–10 hari kerja." },
       ]}
+      artikelLinks={[
+        { href: "/artikel/panduan-asuransi-pabrik-jababeka", label: "Panduan Asuransi Pabrik di Kawasan Jababeka", icon: "📖" },
+        { href: "/artikel/par-vs-kebakaran-gudang-bekasi", label: "PAR vs Kebakaran: Mana yang Cocok untuk Gudang Anda?", icon: "📖" },
+      ]}
       internalLinks={[
         { href: "/asuransi-properti/pabrik", label: "Asuransi Pabrik", icon: "🏭" },
         { href: "/asuransi-properti/gudang", label: "Asuransi Gudang", icon: "📦" },

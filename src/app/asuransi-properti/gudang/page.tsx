@@ -88,6 +88,10 @@ export default function GudangPage() {
         { q: "Apakah risiko pencurian karyawan sendiri termasuk dijamin?", a: "Tidak, dalam polis kejahatan standar. Untuk risiko ini, dibutuhkan polis Fidelity Guarantee terpisah yang khusus menjamin kecurangan atau pencurian oleh karyawan." },
         { q: "Apakah perlu perluasan banjir untuk gudang di Bekasi?", a: "Sangat disarankan untuk gudang di area rendah atau dekat aliran sungai yang berpotensi meluap saat musim hujan. Kerugian stok akibat banjir bisa jauh lebih besar dari nilai perluasan premi yang dibutuhkan." },
       ]}
+      artikelLinks={[
+        { href: "/artikel/par-vs-kebakaran-gudang-bekasi", label: "PAR vs Kebakaran: Mana yang Cocok untuk Gudang Anda?", icon: "📖" },
+        { href: "/artikel/panduan-asuransi-pabrik-jababeka", label: "Panduan Asuransi Pabrik di Kawasan Jababeka", icon: "📖" },
+      ]}
       internalLinks={[
         { href: "/asuransi-properti/pabrik", label: "Asuransi Pabrik", icon: "🏭" },
         { href: "/asuransi-properti/property-all-risk", label: "Property All Risk", icon: "🏢" },

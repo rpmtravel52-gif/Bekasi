@@ -71,6 +71,10 @@ export default function PabrikPage() {
         { q: "Apakah tersedia Business Interruption untuk pabrik?", a: "Ya, tersedia sebagai perluasan. Ini penting bagi pabrik karena kerugian akibat berhentinya produksi selama perbaikan seringkali lebih besar dari kerusakan fisik itu sendiri." },
         { q: "Berapa lama proses survei sebelum polis pabrik terbit?", a: "Untuk pertanggungan besar, survei risiko fisik oleh surveyor biasanya berlangsung 3-7 hari, diikuti penerbitan polis 2-3 hari setelah dokumen dan hasil survei lengkap." },
       ]}
+      artikelLinks={[
+        { href: "/artikel/panduan-asuransi-pabrik-jababeka", label: "Panduan Asuransi Pabrik di Kawasan Jababeka", icon: "📖" },
+        { href: "/artikel/par-vs-kebakaran-gudang-bekasi", label: "PAR vs Kebakaran: Mana yang Cocok untuk Gudang Anda?", icon: "📖" },
+      ]}
       internalLinks={[
         { href: "/asuransi-properti/property-all-risk", label: "Property All Risk", icon: "🏢" },
         { href: "/asuransi-properti/gudang", label: "Asuransi Gudang", icon: "📦" },

@@ -61,6 +61,7 @@ interface Props {
   faqItems: FaqItem[];
 
   internalLinks: InternalLink[];
+  artikelLinks?: InternalLink[];
 
   ctaEmoji: string;
   ctaTitle: React.ReactNode;
@@ -282,6 +283,22 @@ export default function ProdukDetailPage(props: Props) {
           </a>
         </div>
       </section>
+
+      {/* ── BACA JUGA (ARTIKEL) ─────────────────────────────────────────── */}
+      {props.artikelLinks && props.artikelLinks.length > 0 && (
+        <section className="py-10 px-[5vw] bg-cream border-t border-black/5">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xs font-bold tracking-widest uppercase text-[#64748B] mb-4">📖 Baca Juga</p>
+            <div className="flex gap-3 flex-wrap">
+              {props.artikelLinks.map(l => (
+                <Link key={l.href} href={l.href} className="bg-white border border-black/8 text-navy2 text-sm px-4 py-2 rounded-full hover:border-gold hover:text-gold transition-colors no-underline">
+                  {l.icon} {l.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── INTERNAL LINKS ──────────────────────────────────────────────── */}
       <section className="py-10 px-[5vw] bg-white border-t border-black/5">

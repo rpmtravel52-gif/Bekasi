@@ -70,6 +70,10 @@ export default function RumahPage() {
         { q: "Apakah barang elektronik dan perhiasan ikut dijamin?", a: "Barang elektronik umum termasuk dalam jaminan isi rumah. Untuk barang berharga seperti perhiasan dan jam tangan mewah, biasanya perlu dideklarasikan khusus dengan limit tersendiri." },
         { q: "Berapa lama proses klaim jika rumah kebakaran atau kebanjiran?", a: "Setelah laporan awal (idealnya dalam 3x24 jam), proses survei dan verifikasi klaim rumah tinggal umumnya selesai dalam 14–30 hari kerja tergantung besarnya kerugian." },
       ]}
+      artikelLinks={[
+        { href: "/artikel/kenapa-perumahan-bekasi-timur-rawan-banjir-musiman", label: "Kenapa Perumahan di Bekasi Rawan Banjir Musiman", icon: "📖" },
+        { href: "/artikel/kesalahan-nilai-pertanggungan-rumah-bekasi", label: "5 Kesalahan Umum Nilai Pertanggungan Rumah", icon: "📖" },
+      ]}
       internalLinks={[
         { href: "/asuransi-properti/kebakaran", label: "Asuransi Kebakaran", icon: "🔥" },
         { href: "/asuransi-properti/property-all-risk", label: "Property All Risk", icon: "🏢" },

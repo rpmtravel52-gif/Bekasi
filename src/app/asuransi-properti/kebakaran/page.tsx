@@ -70,6 +70,10 @@ export default function KebakaranPage() {
         { q: "Apakah perlu perluasan banjir untuk ruko di Bekasi?", a: "Sangat disarankan, terutama jika lokasi ruko berada di area yang pernah mengalami luapan air musiman. Perluasan ini menambah premi relatif kecil dibanding potensi kerugian." },
         { q: "Bagaimana jika saya menyewa ruko, bukan pemilik?", a: "Anda tetap bisa mengasuransikan isi bangunan dan kepentingan usaha Anda, meski bukan pemilik bangunan. Pemilik bangunan biasanya mengasuransikan struktur bangunannya secara terpisah." },
       ]}
+      artikelLinks={[
+        { href: "/artikel/panduan-asuransi-ruko-bekasi", label: "Panduan Lengkap Asuransi Ruko di Jalur Niaga Bekasi", icon: "📖" },
+        { href: "/artikel/par-vs-kebakaran-gudang-bekasi", label: "PAR vs Kebakaran: Mana yang Cocok untuk Gudang Anda?", icon: "📖" },
+      ]}
       internalLinks={[
         { href: "/asuransi-properti/property-all-risk", label: "Property All Risk", icon: "🏢" },
         { href: "/asuransi-properti/rumah", label: "Asuransi Rumah", icon: "🏡" },
