@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Trust from "@/components/sections/Trust";
 import Produk from "@/components/sections/Produk";
 import Kalkulator from "@/components/sections/Kalkulator";
+import ArtikelPreview from "@/components/sections/ArtikelPreview";
 import ProblemSolution from "@/components/sections/ProblemSolution";
 import Why from "@/components/sections/Why";
 import About from "@/components/sections/About";
@@ -40,6 +41,7 @@ export default function HomePage() {
         <Trust />
         <Produk />
         <Kalkulator />
+        <ArtikelPreview />
         <ProblemSolution />
         <Why />
         <About />

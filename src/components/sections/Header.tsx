@@ -124,7 +124,7 @@ export default function Header() {
                 </div>
               ))}
               <div className="col-span-3 mt-3 pt-3 border-t border-black/6 flex items-center justify-between">
-                <span className="text-[0.78rem] text-[#94A3B8]">📚 Artikel &amp; Edukasi (segera hadir)</span>
+                <Link href="/artikel" onClick={() => setProdukOpen(false)} className="text-[0.78rem] text-[#64748B] hover:text-gold no-underline transition-colors">📚 Artikel &amp; Edukasi</Link>
                 <a href={`https://wa.me/${KONTAK.wa}`} onClick={() => setProdukOpen(false)} className="bg-gold text-navy text-[0.78rem] font-bold px-4 py-1.5 rounded-lg hover:bg-gold2 transition-colors no-underline">
                   💬 Konsultasi Gratis
                 </a>
@@ -132,6 +132,10 @@ export default function Header() {
             </div>
           )}
         </div>
+
+        <Link href="/artikel" className="text-white/75 text-sm font-medium hover:text-gold2 transition-colors no-underline">
+          Artikel
+        </Link>
 
         {isHome && homeLinks.map(l => (
           <a key={l.href} href={l.href} className="text-white/75 text-sm font-medium hover:text-gold2 transition-colors no-underline">
@@ -194,6 +198,10 @@ export default function Header() {
               ))}
             </div>
           )}
+
+          <Link href="/artikel" onClick={() => setMenuOpen(false)} className="text-white/75 px-[5vw] py-3 text-sm font-medium hover:text-gold no-underline border-b border-white/5">
+            Artikel
+          </Link>
 
           {isHome && homeLinks.map(l => (
             <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)} className="text-white/75 px-[5vw] py-3 text-sm font-medium hover:text-gold no-underline border-b border-white/5">

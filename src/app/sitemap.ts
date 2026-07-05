@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asuransi-surety-bond/jaminan-uang-muka",
     "/asuransi-surety-bond/jaminan-pemeliharaan",
     "/asuransi-surety-bond/custom-bond-ob23",
+    "/artikel",
+    "/artikel/kenapa-perumahan-bekasi-timur-rawan-banjir-musiman",
+    "/artikel/panduan-asuransi-pabrik-jababeka",
+    "/artikel/par-vs-kebakaran-gudang-bekasi",
+    "/artikel/kesalahan-nilai-pertanggungan-rumah-bekasi",
+    "/artikel/panduan-asuransi-ruko-bekasi",
   ];
   return [
     {
@@ -45,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${path}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
-      priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan", "/asuransi-engineering", "/asuransi-machinery", "/asuransi-kargo", "/asuransi-surety-bond"].includes(path) ? 0.9 : 0.8,
+      priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan", "/asuransi-engineering", "/asuransi-machinery", "/asuransi-kargo", "/asuransi-surety-bond", "/artikel"].includes(path) ? 0.9 : 0.8,
     })),
   ];
 }
