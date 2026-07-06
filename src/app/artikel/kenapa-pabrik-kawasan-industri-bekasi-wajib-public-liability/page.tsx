@@ -104,9 +104,9 @@ export default function ArtikelPublicLiabilityPabrik() {
 
       <div className="not-prose bg-navy rounded-xl p-6 my-8 flex gap-4 items-start">
         <div className="text-2xl flex-shrink-0">💡</div>
-        <p className="text-white/85 text-sm leading-relaxed m-0">
+        <div className="text-white/85 text-sm leading-relaxed m-0">
           Catatan: proses klaim yang berlarut-larut pada kasus Cimuning terjadi meski melibatkan Pertamina — perusahaan dengan divisi legal dan keuangan yang mumpuni. Ini menunjukkan bahwa tanpa struktur klaim asuransi yang jelas sejak awal, proses ganti rugi pihak ketiga cenderung lambat dan berpotensi memicu ketegangan dengan komunitas sekitar pabrik.
-        </p>
+        </div>
       </div>
 
       <h2>Pertanyaan yang Sering Ditanyakan</h2>

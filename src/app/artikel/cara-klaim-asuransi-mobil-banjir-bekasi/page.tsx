@@ -42,9 +42,9 @@ export default function ArtikelKlaimMobilBanjirBekasi() {
 
       <div className="not-prose bg-navy rounded-xl p-6 my-8 flex gap-4 items-start">
         <div className="text-2xl flex-shrink-0">⚠️</div>
-        <p className="text-white/85 text-sm leading-relaxed m-0">
+        <div className="text-white/85 text-sm leading-relaxed m-0">
           <strong>Penting diketahui sejak awal:</strong> klaim kerusakan akibat banjir hanya bisa diajukan jika polis Anda adalah All Risk <em>dengan perluasan banjir</em> yang secara eksplisit tercantum dalam polis. Polis All Risk tanpa perluasan ini, maupun TLO, umumnya tidak menanggung kerusakan akibat banjir.
-        </p>
+        </div>
       </div>
 
       <h2>Langkah 1: Jangan Nyalakan Mesin Sama Sekali</h2>
