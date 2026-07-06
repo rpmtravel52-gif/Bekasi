@@ -88,10 +88,14 @@ export default function TrukPage() {
         { q: "Bagaimana jika truk mengalami kecelakaan di luar kota saat mengirim barang?", a: "Selama sesuai dengan tujuan dan rute operasional yang dideklarasikan dalam polis, kecelakaan di luar kota tetap dijamin. Segera hubungi kami untuk panduan langkah klaim jika kejadian terjadi di luar Bekasi." },
       ]}
       internalLinks={[
+        { href: "/asuransi-kargo/kargo-darat", label: "Asuransi Kargo Darat", icon: "📦" },
         { href: "/asuransi-kendaraan/mobil", label: "Asuransi Mobil", icon: "🚗" },
         { href: "/asuransi-kendaraan/bus", label: "Asuransi Bus", icon: "🚌" },
         { href: "/asuransi-properti/gudang", label: "Asuransi Gudang", icon: "📦" },
         { href: "/asuransi-liability/public-liability", label: "Public Liability", icon: "🛡️" },
+      ]}
+      artikelLinks={[
+        { href: "/artikel/kenapa-ekspedisi-truk-perlu-asuransi-kargo-terpisah-dari-asuransi-kendaraan", label: "Kenapa Ekspedisi Truk Perlu Asuransi Kargo Terpisah", icon: "🚛" },
       ]}
       ctaEmoji="🚛"
       ctaTitle="Jaga Roda Bisnis Ekspedisi Anda Tetap Berputar"

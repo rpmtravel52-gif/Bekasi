@@ -75,6 +75,10 @@ export default function MarineCargoPage() {
         { href: "/asuransi-surety-bond/custom-bond-ob23", label: "Custom Bond OB23", icon: "🛃" },
         { href: "/asuransi-properti/gudang", label: "Asuransi Gudang", icon: "📦" },
       ]}
+      artikelLinks={[
+        { href: "/artikel/panduan-marine-cargo-importir-bahan-baku-kawasan-industri-bekasi", label: "Panduan Marine Cargo Importir Bahan Baku", icon: "🚢" },
+        { href: "/artikel/incoterms-fob-vs-cif-siapa-wajib-asuransikan-barang-impor", label: "Incoterms FOB vs CIF", icon: "📄" },
+      ]}
       ctaEmoji="🚢"
       ctaTitle="Impor-Ekspor Anda Layak Perlindungan Global Standard"
       ctaDesc="Konsultasikan kebutuhan Marine Cargo Insurance Anda — gratis, sesuai rute dan jenis barang Anda."

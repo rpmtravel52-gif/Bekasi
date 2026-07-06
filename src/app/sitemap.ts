@@ -42,6 +42,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/artikel/kenapa-pabrik-kawasan-industri-bekasi-wajib-public-liability",
     "/artikel/aturan-limbah-b3-pp-22-2021-industri-manufaktur-bekasi",
     "/artikel/studi-kasus-tuntutan-pencemaran-lingkungan-bekasi",
+    "/artikel/incoterms-fob-vs-cif-siapa-wajib-asuransikan-barang-impor",
+    "/artikel/panduan-marine-cargo-importir-bahan-baku-kawasan-industri-bekasi",
+    "/artikel/kenapa-ekspedisi-truk-perlu-asuransi-kargo-terpisah-dari-asuransi-kendaraan",
   ];
   return [
     {

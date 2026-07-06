@@ -74,6 +74,10 @@ export default function KargoDaratPage() {
         { href: "/asuransi-kendaraan/truk-kendaraan-niaga", label: "Truk & Kendaraan Niaga", icon: "🚛" },
         { href: "/asuransi-properti/gudang", label: "Asuransi Gudang", icon: "📦" },
       ]}
+      artikelLinks={[
+        { href: "/artikel/kenapa-ekspedisi-truk-perlu-asuransi-kargo-terpisah-dari-asuransi-kendaraan", label: "Kenapa Ekspedisi Truk Perlu Asuransi Kargo Terpisah", icon: "🚛" },
+        { href: "/artikel/incoterms-fob-vs-cif-siapa-wajib-asuransikan-barang-impor", label: "Incoterms FOB vs CIF", icon: "📄" },
+      ]}
       ctaEmoji="📦"
       ctaTitle="Lindungi Nilai Barang, Bukan Hanya Kendaraannya"
       ctaDesc="Konsultasikan kebutuhan asuransi kargo darat untuk usaha distribusi Anda di Bekasi — gratis, sesuai frekuensi pengiriman Anda."
