@@ -45,6 +45,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/artikel/incoterms-fob-vs-cif-siapa-wajib-asuransikan-barang-impor",
     "/artikel/panduan-marine-cargo-importir-bahan-baku-kawasan-industri-bekasi",
     "/artikel/kenapa-ekspedisi-truk-perlu-asuransi-kargo-terpisah-dari-asuransi-kendaraan",
+    "/artikel/all-risk-vs-tlo-mobil-baru-bekasi",
+    "/artikel/panduan-asuransi-truk-ekspedisi-jababeka-mm2100",
+    "/artikel/biaya-asuransi-mobil-listrik-bekasi",
+    "/artikel/wajibkah-bus-karyawan-passenger-liability",
+    "/artikel/cara-klaim-asuransi-mobil-banjir-bekasi",
   ];
   return [
     {
