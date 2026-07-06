@@ -113,9 +113,9 @@ export default function ArtikelTrukEkspedisiJababeka() {
 
       <div className="not-prose bg-navy rounded-xl p-6 my-8 flex gap-4 items-start">
         <div className="text-2xl flex-shrink-0">⚖️</div>
-        <p className="text-white/85 text-sm leading-relaxed m-0">
+        <div className="text-white/85 text-sm leading-relaxed m-0">
           Perhatikan batas tonase dan dimensi yang dideklarasikan dalam polis. Muatan yang melebihi kapasitas (over dimension over load) yang diizinkan berpotensi membuat klaim ditolak, terlepas dari jenis polis yang dimiliki — ini pengecualian standar yang sering luput diperhatikan pelaku ekspedisi.
-        </p>
+        </div>
       </div>
 
       <h2>4 Langkah Memastikan Truk Ekspedisi Anda Terlindungi dengan Tepat</h2>

@@ -92,9 +92,9 @@ export default function ArtikelMarineCargoBahanBaku() {
 
       <div className="not-prose bg-navy rounded-xl p-6 my-8 flex gap-4 items-start">
         <div className="text-2xl flex-shrink-0">📋</div>
-        <p className="text-white/85 text-sm leading-relaxed m-0">
+        <div className="text-white/85 text-sm leading-relaxed m-0">
           Catatan penting: proses klaim Marine Cargo selalu membutuhkan dokumentasi lengkap sejak awal — Bill of Lading (B/L), invoice, packing list, hingga laporan survei kerusakan (survey report) yang idealnya dibuat segera setelah barang tiba, sebelum di-stuffing ke gudang produksi.
-        </p>
+        </div>
       </div>
 
       <h2>Dokumen yang Wajib Disiapkan Importir Bahan Baku</h2>

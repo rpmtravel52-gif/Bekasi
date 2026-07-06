@@ -50,6 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/artikel/biaya-asuransi-mobil-listrik-bekasi",
     "/artikel/wajibkah-bus-karyawan-passenger-liability",
     "/artikel/cara-klaim-asuransi-mobil-banjir-bekasi",
+    "/artikel/kenapa-kontraktor-bekasi-butuh-surety-bond-sebelum-tender",
+    "/artikel/syarat-surety-bond-proyek-bekasi",
+    "/artikel/cara-mengurus-surety-bond-bekasi-tanpa-menghambat-tender",
+    "/artikel/kesalahan-pengajuan-surety-bond-kontraktor-bekasi",
+    "/artikel/tips-memilih-penerbit-surety-bond-bekasi",
   ];
   return [
     {

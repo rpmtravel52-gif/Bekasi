@@ -108,9 +108,9 @@ export default function ArtikelMobilListrikBekasi() {
 
       <div className="not-prose bg-navy rounded-xl p-6 my-8 flex gap-4 items-start">
         <div className="text-2xl flex-shrink-0">🔋</div>
-        <p className="text-white/85 text-sm leading-relaxed m-0">
+        <div className="text-white/85 text-sm leading-relaxed m-0">
           Sebelum menandatangani polis, tanyakan secara spesifik: apakah kerusakan baterai akibat benturan atau terendam air termasuk jaminan dasar, atau memerlukan perluasan tersendiri? Pertanyaan ini sering luput ditanyakan pemilik EV baru karena asumsi bahwa "All Risk" berarti semua komponen otomatis tercakup.
-        </p>
+        </div>
       </div>
 
       <h2>Hal Lain yang Perlu Diperhatikan Pemilik EV di Bekasi</h2>

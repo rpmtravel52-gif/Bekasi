@@ -96,9 +96,9 @@ export default function ArtikelEkspedisiTrukAsuransiKargo() {
 
       <div className="not-prose bg-navy rounded-xl p-6 my-8 flex gap-4 items-start">
         <div className="text-2xl flex-shrink-0">⚖️</div>
-        <p className="text-white/85 text-sm leading-relaxed m-0">
+        <div className="text-white/85 text-sm leading-relaxed m-0">
           Dalam kontrak antara ekspedisi dan klien pemilik barang, kelalaian melindungi nilai muatan bisa berujung pada tuntutan ganti rugi dari klien terhadap perusahaan ekspedisi itu sendiri — bukan hanya kerugian fisik barang, tapi juga risiko reputasi dan hubungan bisnis jangka panjang.
-        </p>
+        </div>
       </div>
 
       <h2>Kenapa Banyak Ekspedisi Baru Sadar Setelah Rugi</h2>
