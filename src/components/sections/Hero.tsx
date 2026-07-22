@@ -17,7 +17,7 @@ export default function Hero() {
         <div>
           <div className="animate-fadeUp-d1 inline-flex items-center gap-2 bg-gold/10 border border-gold/35 text-gold3 text-xs font-semibold px-4 py-[5px] rounded-full mb-5 tracking-widest uppercase">
             <span className="text-[0.55rem] text-gold">◆</span>
-            Konsultan Asuransi Kerugian · Bekasi
+            Praktisi Asuransi Kerugian · Bekasi
           </div>
           <h1 className="animate-fadeUp-d2 font-heading text-[clamp(2.6rem,4.5vw,4rem)] text-white leading-[1.15] mb-5">
             Proteksi Tepat untuk<br />
@@ -45,7 +45,7 @@ export default function Hero() {
               {QUICK_LINKS.map(p => (
                 <a
                   key={p.produk}
-                  href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent(`Halo Pak Rio, saya ingin konsultasi asuransi ${p.produk} di Bekasi.`)}`}
+                  href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent(`Halo Nur Hidayat, saya ingin konsultasi asuransi ${p.produk} di Bekasi.`)}`}
                   className="bg-gold/8 border border-gold/15 text-white/80 text-xs font-medium py-2 px-2.5 rounded-lg text-center hover:bg-gold/18 hover:text-white transition-colors no-underline"
                 >
                   {p.label}
