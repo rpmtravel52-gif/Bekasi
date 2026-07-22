@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { KONTAK } from "@/lib/data";
 
 export default function About() {
@@ -5,12 +6,17 @@ export default function About() {
     <section id="about" className="py-[5.5rem] px-[5vw] bg-cream">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[4.5rem] items-center">
 
-        {/* AVATAR (belum ada foto — pakai inisial sampai foto tersedia) */}
-        <div className="relative rounded-[20px] overflow-hidden h-[460px] bg-navy shadow-[0_24px_64px_rgba(13,33,55,0.18)] flex items-center justify-center">
-          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 70% 70% at 50% 35%, rgba(200,150,62,0.18) 0%, transparent 65%)"}} />
-          <div className="relative z-10 w-32 h-32 rounded-full bg-gold/15 border-2 border-gold/40 flex items-center justify-center">
-            <span className="font-heading text-gold text-4xl font-bold">RD</span>
-          </div>
+        {/* AVATAR */}
+        <div className="relative rounded-[20px] overflow-hidden h-[460px] bg-navy shadow-[0_24px_64px_rgba(13,33,55,0.18)]">
+          <Image
+            src="/nurhidayat.jpg"
+            alt="Nur Hidayat - Praktisi dan Agen Asuransi Kerugian Bekasi"
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <div className="absolute inset-0 z-10" style={{background:"linear-gradient(to top, rgba(13,33,55,0.85) 0%, rgba(13,33,55,0.05) 45%, transparent 65%)"}} />
 
           <div className="absolute bottom-0 left-0 right-0 z-20 px-6 pb-6 pt-10">
             <div className="font-heading text-white text-[1.3rem] font-bold leading-tight">Nur Hidayat</div>
