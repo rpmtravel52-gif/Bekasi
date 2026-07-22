@@ -5,7 +5,7 @@ import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Asuransi Liability Bekasi – Public Liability & Limbah B3",
-  description: "Konsultan asuransi liability independen di Bekasi. Public Liability untuk bisnis dan Asuransi Limbah B3 untuk perusahaan manufaktur di kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon. Konsultasi gratis.",
+  description: "Praktisi asuransi liability independen di Bekasi. Public Liability untuk bisnis dan Asuransi Limbah B3 untuk perusahaan manufaktur di kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon. Konsultasi gratis.",
   keywords: "asuransi liability bekasi, public liability bekasi, asuransi limbah b3 bekasi, asuransi tanggung gugat bekasi, asuransi lingkungan industri bekasi",
   alternates: { canonical: "https://asuransibekasi.id/asuransi-liability" },
   openGraph: {
@@ -104,7 +104,7 @@ export default function LiabilityPage() {
       <section className="py-16 px-[5vw] bg-cream">
         <div className="text-center mb-10">
           <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Mengapa Kami</div>
-          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Konsultan yang Paham<br />Risiko Industri Bekasi</h2>
+          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Praktisi yang Paham<br />Risiko Industri Bekasi</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
           {whyItems.map(w => (

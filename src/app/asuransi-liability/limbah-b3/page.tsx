@@ -53,7 +53,7 @@ export default function LimbahB3Page() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 15.000.000 – Rp 40.000.000", sublabel: "tergantung jenis & volume limbah B3" }}
       simulasiCatatan="Rate sangat dipengaruhi jenis dan volume limbah B3 yang dihasilkan, sistem pengelolaan limbah di lokasi (IPAL, TPS B3), dan riwayat kepatuhan lingkungan perusahaan. Umumnya memerlukan environmental risk assessment sebelum penawaran final."
-      simulasiWaMsg="Halo Nur Hidayat, saya ingin konsultasi asuransi Limbah B3 untuk pabrik saya di kawasan industri Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi Limbah B3 untuk pabrik saya di kawasan industri Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_LIABILITY}
       pengecualianNote={NOTE_LIABILITY}
       syaratItems={[

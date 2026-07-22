@@ -53,7 +53,7 @@ export default function AlatBeratPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 22.500.000 – Rp 45.000.000", sublabel: "untuk 1 unit excavator senilai Rp 1,5 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis alat berat (excavator, crane, forklift memiliki profil risiko berbeda), usia unit, dan intensitas penggunaan. Untuk kepemilikan multi-unit, hubungi kami untuk penawaran fleet yang lebih efisien."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi alat berat (CPM) untuk proyek/pabrik saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi alat berat (CPM) untuk proyek/pabrik saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_MACHINERY}
       pengecualianNote={NOTE_MACHINERY}
       syaratItems={[

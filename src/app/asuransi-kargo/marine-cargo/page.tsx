@@ -53,7 +53,7 @@ export default function MarineCargoPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi per Pengiriman", value: "Rp 2.560.000 – Rp 8.000.000", sublabel: "untuk nilai barang ± Rp 3,2 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis barang, rute pelayaran/penerbangan, jenis kemasan (kontainer/curah), dan klausul ICC yang dipilih. Untuk importir rutin, tersedia skema polis tahunan (open cover)."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Marine Cargo Insurance untuk impor/ekspor barang usaha saya. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi Marine Cargo Insurance untuk impor/ekspor barang usaha saya. Mohon info lebih lanjut."
       prosesItems={PROSES_KARGO}
       pengecualianNote={NOTE_KARGO}
       syaratItems={[

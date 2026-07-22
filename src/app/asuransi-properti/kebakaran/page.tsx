@@ -4,7 +4,7 @@ import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVarian
 
 export const metadata: Metadata = {
   title: "Asuransi Kebakaran Bekasi – Ruko, Toko & Bangunan Usaha",
-  description: "Asuransi kebakaran (FLEXAS) untuk ruko, toko, dan bangunan usaha di Bekasi. Premi terjangkau, proses cepat, konsultasi gratis dengan konsultan lokal Bekasi.",
+  description: "Asuransi kebakaran (FLEXAS) untuk ruko, toko, dan bangunan usaha di Bekasi. Premi terjangkau, proses cepat, konsultasi gratis dengan praktisi lokal Bekasi.",
   keywords: "asuransi kebakaran bekasi, asuransi ruko bekasi, asuransi toko bekasi, flexas bekasi, asuransi bangunan usaha bekasi",
   alternates: { canonical: "https://asuransibekasi.id/asuransi-properti/kebakaran" },
 };
@@ -53,7 +53,7 @@ export default function KebakaranPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 500.000 – Rp 1.200.000", sublabel: "untuk pertanggungan Rp 1 miliar" }}
       simulasiCatatan="Rate dipengaruhi kelas konstruksi, lokasi, dan jenis usaha yang berjalan di dalam bangunan (misal: usaha dengan bahan mudah terbakar akan berpremi lebih tinggi)."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi kebakaran untuk ruko/toko saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi kebakaran untuk ruko/toko saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_PROPERTI}
       pengecualianNote={NOTE_PROPERTI}
       syaratItems={[

@@ -171,7 +171,7 @@ export default function ArtikelAllRiskVsTLO() {
       <div className="not-prose bg-navy rounded-xl p-6 mt-10 text-center">
         <div className="font-heading text-white text-base font-semibold mb-2">Masih Bingung Pilih All Risk atau TLO untuk Mobil Baru Anda?</div>
         <div className="text-white/70 text-sm mb-4">Ceritakan merek, tahun, dan cara pemakaian mobil Anda — kami bantu hitungkan estimasi premi dan rekomendasi perluasan yang relevan untuk lokasi Anda di Bekasi.</div>
-        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Pak Rio, saya ingin konsultasi pilih All Risk atau TLO untuk mobil baru saya di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
+        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Nur, saya ingin konsultasi pilih All Risk atau TLO untuk mobil baru saya di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
           💬 Konsultasi via WhatsApp
         </a>
       </div>

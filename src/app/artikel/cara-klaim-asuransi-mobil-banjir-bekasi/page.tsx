@@ -125,7 +125,7 @@ export default function ArtikelKlaimMobilBanjirBekasi() {
       <div className="not-prose bg-navy rounded-xl p-6 mt-10 text-center">
         <div className="font-heading text-white text-base font-semibold mb-2">Mobil Anda Baru Kena Banjir di Bekasi?</div>
         <div className="text-white/70 text-sm mb-4">Kami bantu dampingi proses klaim dari laporan awal hingga dana perbaikan cair — atau konsultasi dulu jika Anda belum punya perluasan banjir untuk musim depan.</div>
-        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Pak Rio, mobil saya kena banjir di Bekasi dan ingin bantuan proses klaim asuransi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
+        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Nur, mobil saya kena banjir di Bekasi dan ingin bantuan proses klaim asuransi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
           💬 Konsultasi via WhatsApp
         </a>
       </div>

@@ -70,7 +70,7 @@ export default function MobilPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 5.200.000 – Rp 8.150.000", sublabel: "untuk mobil senilai Rp 250 juta" }}
       simulasiCatatan="Ini contoh ilustrasi. Untuk perhitungan sesuai kendaraan Anda secara spesifik (harga, plat, jenis perlindungan), gunakan kalkulator premi interaktif di halaman utama kami."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi mobil saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi mobil saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_KENDARAAN}
       pengecualianNote={NOTE_KENDARAAN}
       syaratItems={[
@@ -95,7 +95,7 @@ export default function MobilPage() {
       ]}
       ctaEmoji="🚗"
       ctaTitle="Hitung Premi Mobil Anda dalam Hitungan Detik"
-      ctaDesc="Gunakan kalkulator premi interaktif kami atau konsultasi langsung dengan Pak Rio — gratis, tanpa tekanan."
+      ctaDesc="Gunakan kalkulator premi interaktif kami atau konsultasi langsung dengan Nur Hidayat — gratis, tanpa tekanan."
     />
   );
 }

@@ -53,7 +53,7 @@ export default function ParPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 20.000.000 – Rp 37.500.000", sublabel: "untuk total pertanggungan Rp 25 miliar" }}
       simulasiCatatan="Rate final tergantung hasil survei risiko fisik (fire protection, jarak ke pemadam kebakaran, riwayat klaim) dan cakupan perluasan yang dipilih. Hubungi kami untuk penawaran resmi sesuai kondisi pabrik Anda."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Property All Risk (PAR) untuk pabrik/gedung saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi Property All Risk (PAR) untuk pabrik/gedung saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_PROPERTI}
       pengecualianNote={NOTE_PROPERTI}
       syaratItems={[

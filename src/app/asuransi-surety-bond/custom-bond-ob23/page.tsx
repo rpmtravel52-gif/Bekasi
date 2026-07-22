@@ -48,7 +48,7 @@ export default function CustomBondOb23Page() {
       ]}
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 7.500.000 – Rp 22.500.000", sublabel: "untuk nilai jaminan Rp 1,5 miliar" }}
       simulasiCatatan="Rate dipengaruhi profil kredibilitas importir, jenis fasilitas kepabeanan yang digunakan, dan jangka waktu jaminan. Importir dengan status AEO (Authorized Economic Operator) umumnya mendapat rate lebih kompetitif."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi Custom Bond OB23 untuk kebutuhan impor perusahaan saya di kawasan industri Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi Custom Bond OB23 untuk kebutuhan impor perusahaan saya di kawasan industri Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_SURETY}
       pengecualianNote={NOTE_SURETY}
       syaratItems={[

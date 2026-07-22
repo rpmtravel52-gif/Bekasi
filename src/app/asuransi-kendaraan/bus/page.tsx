@@ -53,7 +53,7 @@ export default function BusPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi Total / Tahun", value: "Rp 25.000.000 – Rp 45.000.000", sublabel: "untuk bus senilai Rp 800 juta + passenger liability" }}
       simulasiCatatan="Rate dipengaruhi jenis operasional (pariwisata vs antar-jemput karyawan), kapasitas penumpang, dan usia bus. Hubungi kami untuk penawaran resmi sesuai unit bus Anda."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi bus untuk operasional saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi bus untuk operasional saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_KENDARAAN}
       pengecualianNote={NOTE_KENDARAAN}
       syaratItems={[

@@ -48,7 +48,7 @@ export default function JaminanPenawaranPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 500.000 – Rp 3.000.000", sublabel: "untuk nilai jaminan Rp 50-150 juta" }}
       simulasiCatatan="Biaya penerbitan (bukan premi tahunan seperti asuransi biasa) dihitung sekali untuk masa berlaku jaminan sesuai jangka waktu tender. Nilai jaminan mengikuti syarat yang ditetapkan panitia lelang dalam dokumen tender."
-      simulasiWaMsg="Halo Pak Rio, saya ingin mengajukan Jaminan Penawaran (Bid Bond) untuk tender proyek yang saya ikuti. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin mengajukan Jaminan Penawaran (Bid Bond) untuk tender proyek yang saya ikuti. Mohon info lebih lanjut."
       prosesItems={PROSES_SURETY}
       pengecualianNote={NOTE_SURETY}
       syaratItems={[

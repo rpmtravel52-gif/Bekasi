@@ -45,7 +45,7 @@ export default function Hero() {
               {QUICK_LINKS.map(p => (
                 <a
                   key={p.produk}
-                  href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent(`Halo Nur Hidayat, saya ingin konsultasi asuransi ${p.produk} di Bekasi.`)}`}
+                  href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent(`Halo Nur, saya ingin konsultasi asuransi ${p.produk} di Bekasi.`)}`}
                   className="bg-gold/8 border border-gold/15 text-white/80 text-xs font-medium py-2 px-2.5 rounded-lg text-center hover:bg-gold/18 hover:text-white transition-colors no-underline"
                 >
                   {p.label}

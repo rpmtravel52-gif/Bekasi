@@ -53,7 +53,7 @@ export default function PabrikPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 28.000.000 – Rp 63.000.000", sublabel: "untuk total pertanggungan Rp 35 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis industri (misal: kimia dan tekstil berpremi lebih tinggi dari elektronik ringan), sistem proteksi kebakaran, dan riwayat klaim pabrik."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi pabrik saya di kawasan industri Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi pabrik saya di kawasan industri Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_PROPERTI}
       pengecualianNote={NOTE_PROPERTI}
       syaratItems={[

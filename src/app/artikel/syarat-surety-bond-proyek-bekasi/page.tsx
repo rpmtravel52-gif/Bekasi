@@ -120,7 +120,7 @@ export default function ArtikelSyaratSuretyBond() {
       <div className="not-prose bg-navy rounded-xl p-6 mt-10 text-center">
         <div className="font-heading text-white text-base font-semibold mb-2">Ingin Tahu Dokumen Apa Saja yang Perlu Anda Siapkan?</div>
         <div className="text-white/70 text-sm mb-4">Konsultasikan kebutuhan surety bond untuk proyek Anda — gratis, kami bantu cek kelengkapan dokumen dari awal.</div>
-        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Pak Rio, saya ingin konsultasi persyaratan dokumen surety bond untuk proyek saya di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
+        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Nur, saya ingin konsultasi persyaratan dokumen surety bond untuk proyek saya di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
           💬 Konsultasi via WhatsApp
         </a>
       </div>

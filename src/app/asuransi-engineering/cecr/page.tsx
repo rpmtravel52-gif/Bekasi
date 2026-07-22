@@ -52,7 +52,7 @@ export default function CecrPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi Masa Pemeliharaan", value: "Rp 6.400.000 – Rp 16.000.000", sublabel: "untuk nilai proyek Rp 8 miliar, 12 bulan" }}
       simulasiCatatan="Rate dipengaruhi jenis infrastruktur, kondisi lingkungan sekitar (rawan banjir/longsor), dan durasi masa pemeliharaan yang disepakati dalam kontrak."
-      simulasiWaMsg="Halo Nur Hidayat, saya ingin konsultasi asuransi CECR untuk proyek infrastruktur saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi CECR untuk proyek infrastruktur saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_ENGINEERING}
       pengecualianNote={NOTE_ENGINEERING}
       syaratItems={[

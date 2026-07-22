@@ -5,7 +5,7 @@ import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Asuransi Kendaraan Bekasi – Mobil, Bus & Truk Niaga",
-  description: "Konsultan asuransi kendaraan independen di Bekasi. Asuransi mobil, bus, dan truk niaga untuk personal maupun bisnis ekspedisi di kawasan industri Bekasi. Kalkulator premi & konsultasi gratis.",
+  description: "Praktisi asuransi kendaraan independen di Bekasi. Asuransi mobil, bus, dan truk niaga untuk personal maupun bisnis ekspedisi di kawasan industri Bekasi. Kalkulator premi & konsultasi gratis.",
   keywords: "asuransi kendaraan bekasi, asuransi mobil bekasi, asuransi bus bekasi, asuransi truk bekasi, asuransi kendaraan niaga bekasi",
   alternates: { canonical: "https://asuransibekasi.id/asuransi-kendaraan" },
   openGraph: {
@@ -110,7 +110,7 @@ export default function KendaraanPage() {
       <section className="py-16 px-[5vw] bg-cream">
         <div className="text-center mb-10">
           <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Mengapa Kami</div>
-          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Konsultan yang Paham<br />Lalu Lintas Bekasi</h2>
+          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Praktisi yang Paham<br />Lalu Lintas Bekasi</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
           {whyItems.map(w => (

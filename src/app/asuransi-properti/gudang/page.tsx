@@ -71,7 +71,7 @@ export default function GudangPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 5.000.000 – Rp 10.000.000", sublabel: "untuk pertanggungan Rp 5 miliar" }}
       simulasiCatatan="Rate dipengaruhi jenis barang yang disimpan (mudah terbakar atau tidak), sistem proteksi kebakaran gudang, dan skema nilai pertanggungan yang dipilih."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi gudang/warehouse saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi gudang/warehouse saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_PROPERTI}
       pengecualianNote={NOTE_PROPERTI}
       syaratItems={[

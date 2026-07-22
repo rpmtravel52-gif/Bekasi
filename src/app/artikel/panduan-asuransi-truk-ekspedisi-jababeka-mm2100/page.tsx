@@ -137,7 +137,7 @@ export default function ArtikelTrukEkspedisiJababeka() {
       <div className="not-prose bg-navy rounded-xl p-6 mt-10 text-center">
         <div className="font-heading text-white text-base font-semibold mb-2">Armada Truk Anda Beroperasi di Jababeka atau MM2100?</div>
         <div className="text-white/70 text-sm mb-4">Konsultasikan skema asuransi yang paling sesuai untuk skala usaha ekspedisi Anda — gratis, tanpa tekanan.</div>
-        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Pak Rio, saya ingin konsultasi asuransi truk untuk usaha ekspedisi saya di kawasan Jababeka/MM2100.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
+        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Nur, saya ingin konsultasi asuransi truk untuk usaha ekspedisi saya di kawasan Jababeka/MM2100.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
           💬 Konsultasi via WhatsApp
         </a>
       </div>

@@ -5,7 +5,7 @@ import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Asuransi Engineering Bekasi – Contractor All Risk (CAR) & CECR",
-  description: "Konsultan asuransi engineering independen di Bekasi. Contractor All Risk (CAR) untuk proyek konstruksi dan CECR untuk infrastruktur sipil yang telah selesai dibangun. Konsultasi gratis.",
+  description: "Praktisi asuransi engineering independen di Bekasi. Contractor All Risk (CAR) untuk proyek konstruksi dan CECR untuk infrastruktur sipil yang telah selesai dibangun. Konsultasi gratis.",
   keywords: "asuransi engineering bekasi, contractor all risk bekasi, CAR bekasi, CECR bekasi, asuransi konstruksi bekasi, asuransi proyek sipil bekasi",
   alternates: { canonical: "https://asuransibekasi.id/asuransi-engineering" },
   openGraph: {
@@ -109,7 +109,7 @@ export default function EngineeringPage() {
       <section className="py-16 px-[5vw] bg-cream">
         <div className="text-center mb-10">
           <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Mengapa Kami</div>
-          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Konsultan yang Paham<br />Proyek Konstruksi Bekasi</h2>
+          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Praktisi yang Paham<br />Proyek Konstruksi Bekasi</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
           {whyItems.map(w => (

@@ -52,7 +52,7 @@ export default function PublicLiabilityPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 2.500.000 – Rp 8.000.000", sublabel: "tergantung jenis & skala usaha" }}
       simulasiCatatan="Rate sangat dipengaruhi jenis usaha (pabrik kimia berbeda dengan kantor biasa), jumlah pengunjung/karyawan, dan riwayat klaim. Hubungi kami untuk penawaran sesuai profil bisnis Anda."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi Public Liability untuk bisnis saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi Public Liability untuk bisnis saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_LIABILITY}
       pengecualianNote={NOTE_LIABILITY}
       syaratItems={[

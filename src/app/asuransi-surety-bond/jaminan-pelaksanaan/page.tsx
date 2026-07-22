@@ -48,7 +48,7 @@ export default function JaminanPelaksanaanPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Biaya Penerbitan", value: "Rp 5.000.000 – Rp 12.500.000", sublabel: "untuk nilai jaminan Rp 500 juta, 12 bulan" }}
       simulasiCatatan="Rate dipengaruhi rekam jejak kontraktor (track record proyek sebelumnya), kondisi keuangan perusahaan, dan kompleksitas proyek. Kontraktor dengan riwayat baik umumnya mendapat rate lebih kompetitif."
-      simulasiWaMsg="Halo Pak Rio, saya ingin mengajukan Jaminan Pelaksanaan (Performance Bond) untuk proyek yang saya menangkan di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin mengajukan Jaminan Pelaksanaan (Performance Bond) untuk proyek yang saya menangkan di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_SURETY}
       pengecualianNote={NOTE_SURETY}
       syaratItems={[

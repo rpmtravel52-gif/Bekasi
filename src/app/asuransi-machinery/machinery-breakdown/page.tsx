@@ -53,7 +53,7 @@ export default function MachineryBreakdownPage() {
       ]}
       simulasiHighlight={{ label: "Estimasi Premi / Tahun", value: "Rp 20.000.000 – Rp 48.000.000", sublabel: "untuk pertanggungan Rp 8 miliar" }}
       simulasiCatatan="Rate sangat dipengaruhi jenis, usia, dan kompleksitas mesin, serta riwayat maintenance dan klaim sebelumnya. Mesin yang lebih tua umumnya memerlukan rate lebih tinggi."
-      simulasiWaMsg="Halo Pak Rio, saya ingin konsultasi asuransi Machinery Breakdown untuk mesin produksi pabrik saya di Bekasi. Mohon info lebih lanjut."
+      simulasiWaMsg="Halo Nur, saya ingin konsultasi asuransi Machinery Breakdown untuk mesin produksi pabrik saya di Bekasi. Mohon info lebih lanjut."
       prosesItems={PROSES_MACHINERY}
       pengecualianNote={NOTE_MACHINERY}
       syaratItems={[

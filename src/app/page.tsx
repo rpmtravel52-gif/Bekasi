@@ -14,8 +14,8 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: "Asuransi Bekasi – Konsultan Asuransi Kerugian Terpercaya di Bekasi",
-  description: "Konsultan asuransi kerugian independen di Bekasi. Kendaraan, properti, pabrik & gudang kawasan industri, kargo, liability, surety bond. Konsultasi GRATIS.",
+  title: "Asuransi Bekasi – Praktisi Asuransi Kerugian Terpercaya di Bekasi",
+  description: "Praktisi asuransi kerugian independen di Bekasi. Kendaraan, properti, pabrik & gudang kawasan industri, kargo, liability, surety bond. Konsultasi GRATIS.",
   alternates: { canonical: "https://asuransibekasi.id" },
 };
 

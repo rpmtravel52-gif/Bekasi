@@ -110,7 +110,7 @@ export default function ArtikelStudiKasusPencemaran() {
       <div className="not-prose bg-navy rounded-xl p-6 mt-10 text-center">
         <div className="font-heading text-white text-base font-semibold mb-2">Jangan Tunggu Sampai Jadi Studi Kasus Berikutnya</div>
         <div className="text-white/70 text-sm mb-4">Konsultasikan proteksi Asuransi Limbah B3 untuk perusahaan Anda — gratis, sesuai profil risiko produksi.</div>
-        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Pak Rio, saya ingin konsultasi Asuransi Limbah B3 setelah membaca studi kasus tuntutan pencemaran lingkungan di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
+        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Nur, saya ingin konsultasi Asuransi Limbah B3 setelah membaca studi kasus tuntutan pencemaran lingkungan di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
           💬 Konsultasi via WhatsApp
         </a>
       </div>

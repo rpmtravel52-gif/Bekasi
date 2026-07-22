@@ -5,7 +5,7 @@ import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Asuransi Machinery Bekasi – Machinery Breakdown & Alat Berat (CPM)",
-  description: "Konsultan asuransi mesin dan alat berat independen di Bekasi. Machinery Breakdown untuk mesin produksi dan Asuransi Alat Berat (CPM) untuk excavator, crane, dan forklift. Konsultasi gratis.",
+  description: "Praktisi asuransi mesin dan alat berat independen di Bekasi. Machinery Breakdown untuk mesin produksi dan Asuransi Alat Berat (CPM) untuk excavator, crane, dan forklift. Konsultasi gratis.",
   keywords: "asuransi machinery bekasi, machinery breakdown bekasi, asuransi alat berat bekasi, asuransi excavator bekasi, asuransi crane bekasi, CPM insurance bekasi",
   alternates: { canonical: "https://asuransibekasi.id/asuransi-machinery" },
   openGraph: {
@@ -109,7 +109,7 @@ export default function MachineryPage() {
       <section className="py-16 px-[5vw] bg-cream">
         <div className="text-center mb-10">
           <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Mengapa Kami</div>
-          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Konsultan yang Paham<br />Mesin & Alat Berat Industri</h2>
+          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Praktisi yang Paham<br />Mesin & Alat Berat Industri</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
           {whyItems.map(w => (

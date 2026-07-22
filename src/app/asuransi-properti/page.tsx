@@ -6,7 +6,7 @@ import { KONTAK } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Asuransi Properti Bekasi – PAR, Kebakaran, Gudang, Pabrik & Rumah",
   description:
-    "Konsultan asuransi properti independen di Bekasi. Lindungi rumah, ruko, gudang, dan pabrik di kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon dari kebakaran, banjir, dan risiko fisik lainnya. Konsultasi gratis.",
+    "Praktisi asuransi properti independen di Bekasi. Lindungi rumah, ruko, gudang, dan pabrik di kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon dari kebakaran, banjir, dan risiko fisik lainnya. Konsultasi gratis.",
   keywords:
     "asuransi properti bekasi, asuransi kebakaran bekasi, property all risk bekasi, asuransi pabrik bekasi, asuransi gudang bekasi, asuransi rumah bekasi, asuransi kawasan industri jababeka, asuransi mm2100, asuransi ejip",
   alternates: { canonical: "https://asuransibekasi.id/asuransi-properti" },
@@ -48,8 +48,8 @@ const schemaFAQ = {
     },
     {
       "@type": "Question",
-      name: "Apa bedanya konsultan asuransi independen dengan agen perusahaan asuransi?",
-      acceptedAnswer: { "@type": "Answer", text: "Agen perusahaan asuransi hanya menjual produk dari satu perusahaan. Konsultan independen seperti Asuransi Bekasi tidak terikat satu perusahaan manapun, dapat membandingkan produk dari berbagai insurer berlisensi OJK, dan mendampingi klien sepanjang proses klaim." },
+      name: "Apa bedanya praktisi asuransi independen dengan agen perusahaan asuransi?",
+      acceptedAnswer: { "@type": "Answer", text: "Agen perusahaan asuransi hanya menjual produk dari satu perusahaan. Praktisi independen seperti Asuransi Bekasi tidak terikat satu perusahaan manapun, dapat membandingkan produk dari berbagai insurer berlisensi OJK, dan mendampingi klien sepanjang proses klaim." },
     },
   ],
 };
@@ -119,7 +119,7 @@ export default function PropertiPage() {
       <section className="py-16 px-[5vw] bg-cream">
         <div className="text-center mb-10">
           <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Mengapa Kami</div>
-          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Konsultan yang Paham<br />Karakter Bekasi</h2>
+          <h2 className="font-heading text-[clamp(1.6rem,2.5vw,2.3rem)] text-navy">Praktisi yang Paham<br />Karakter Bekasi</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
           {whyItems.map(w => (

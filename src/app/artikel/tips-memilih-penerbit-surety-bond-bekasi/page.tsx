@@ -113,7 +113,7 @@ export default function ArtikelTipsMemilihPenerbit() {
       <div className="not-prose bg-navy rounded-xl p-6 mt-10 text-center">
         <div className="font-heading text-white text-base font-semibold mb-2">Pastikan Jaminan Proyek Anda Sah Sejak Awal</div>
         <div className="text-white/70 text-sm mb-4">Konsultasikan kebutuhan surety bond Anda dengan penerbit yang terdaftar dan diawasi OJK — gratis.</div>
-        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Pak Rio, saya ingin konsultasi memilih penerbit surety bond yang terpercaya dan terdaftar OJK untuk proyek saya di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
+        <a href={`https://wa.me/${KONTAK.wa}?text=${encodeURIComponent("Halo Nur, saya ingin konsultasi memilih penerbit surety bond yang terpercaya dan terdaftar OJK untuk proyek saya di Bekasi.")}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
           💬 Konsultasi via WhatsApp
         </a>
       </div>
