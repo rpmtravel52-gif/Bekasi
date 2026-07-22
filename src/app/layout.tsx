@@ -23,27 +23,27 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Asuransi Bekasi – Konsultan Asuransi Kerugian Terpercaya di Bekasi",
+    default: "Asuransi Bekasi – Praktisi Asuransi Kerugian Terpercaya di Bekasi",
     template: "%s | Asuransi Bekasi",
   },
   description:
-    "Asuransi Bekasi – Konsultan asuransi kerugian independen di Bekasi. Melayani asuransi kendaraan, properti, engineering, kargo, liability, dan surety bond untuk personal, UMKM, dan korporasi di kawasan industri Bekasi.",
+    "Asuransi Bekasi – Praktisi asuransi kerugian independen di Bekasi. Melayani asuransi kendaraan, properti, engineering, kargo, liability, dan surety bond untuk personal, UMKM, dan korporasi di kawasan industri Bekasi.",
   keywords:
-    "asuransi bekasi, asuransi kerugian bekasi, konsultan asuransi bekasi, asuransi mobil bekasi, asuransi kebakaran bekasi, asuransi pabrik bekasi, asuransi kawasan industri jababeka, asuransi properti bekasi",
-  authors: [{ name: "Rio Diansyah" }],
+    "asuransi bekasi, asuransi kerugian bekasi, Praktisi asuransi bekasi, asuransi mobil bekasi, asuransi kebakaran bekasi, asuransi pabrik bekasi, asuransi kawasan industri jababeka, asuransi properti bekasi",
+  authors: [{ name: "Nur Hidayat" }],
   alternates: { canonical: BASE_URL },
   openGraph: {
-    title: "Asuransi Bekasi – Konsultan Asuransi Kerugian Terpercaya",
-    description: "Konsultan asuransi kerugian independen di Bekasi. Konsultasi GRATIS, berpengalaman melayani kawasan industri dan personal.",
+    title: "Asuransi Bekasi – Praktisi Asuransi Kerugian Terpercaya",
+    description: "Praktisi dan Agen Asuransi. Konsultasi GRATIS, berpengalaman melayani kawasan industri dan personal.",
     url: BASE_URL,
     siteName: "Asuransi Bekasi",
     locale: "id_ID",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Asuransi Bekasi – Konsultan Asuransi Kerugian Bekasi" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Asuransi Bekasi – Praktisi Asuransi Kerugian Bekasi" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asuransi Bekasi – Konsultan Asuransi Kerugian Bekasi",
+    title: "Asuransi Bekasi – Praktisi Asuransi Kerugian Bekasi",
     description: "Konsultasi asuransi kerugian gratis. Kendaraan, properti, kargo, engineering, liability, surety bond.",
   },
   icons: {
@@ -77,10 +77,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         "@id": `${BASE_URL}/#organization`,
         "name": "Asuransi Bekasi",
         "alternateName": "AsuransiBekasi.id",
-        "description": "Konsultan asuransi kerugian independen di Bekasi, melayani personal, UMKM, hingga industri di kawasan Jababeka, MM2100, EJIP, dan Delta Silicon.",
+        "description": "Praktisi asuransi kerugian independen di Bekasi, melayani personal, UMKM, hingga industri di kawasan Jababeka, MM2100, EJIP, dan Delta Silicon.",
         "url": BASE_URL,
-        "telephone": "+628131556592",
-        "email": "rio@asuransibekasi.id",
+        "telephone": "+6281270826212",
+        "email": "nur@asuransibekasi.id",
         "founder": { "@type": "Person", "name": "Rio Diansyah" },
         "address": {
           "@type": "PostalAddress",
@@ -107,7 +107,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surety Bond", "url": `${BASE_URL}/asuransi-surety-bond` } },
           ],
         },
-        "sameAs": [`https://wa.me/628131556592`],
+        "sameAs": [`https://wa.me/6281270826212`],
       },
       {
         "@type": "WebSite",
