@@ -11,7 +11,40 @@ export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
   keywords: "incoterms fob vs cif, asuransi barang impor bekasi, siapa wajib asuransi impor, marine cargo insurance incoterms, asuransi impor bahan baku cikarang",
-  alternates: { canonical: `https://asuransibekasi.id/artikel/${meta.slug}` },
+  alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
+  authors: [{ name: "Nur Hidayat" }],
+  openGraph: {
+    title: meta.title,
+    description: meta.excerpt,
+    url: `https://asuransibekasi.biz.id/artikel/${meta.slug}`,
+    type: "article",
+    publishedTime: meta.publishedDate,
+    modifiedTime: meta.updatedDate,
+    authors: ["Nur Hidayat"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: meta.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: meta.title,
+    description: meta.excerpt,
+  },
+};
+
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: meta.title,
+  description: meta.excerpt,
+  image: "https://asuransibekasi.biz.id/og-image.png",
+  datePublished: meta.publishedDate,
+  dateModified: meta.updatedDate,
+  author: { "@type": "Person", name: "Nur Hidayat" },
+  publisher: {
+    "@type": "Organization",
+    name: "Asuransi Bekasi",
+    logo: { "@type": "ImageObject", url: "https://asuransibekasi.biz.id/favicon-512x512.png" },
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
 };
 
 const schemaFAQ = {
@@ -35,6 +68,7 @@ export default function ArtikelIncotermsFobCif() {
       heroDek={meta.excerpt}
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
 
       <p>
         Bagi importir bahan baku yang berbasis di kawasan industri Bekasi — Jababeka, MM2100, EJIP, hingga yang memakai jalur Cikarang Dry Port — istilah FOB dan CIF biasanya hanya dibaca sekilas di invoice supplier tanpa benar-benar dipahami konsekuensinya. Padahal dua istilah dagang internasional ini menentukan satu hal yang sangat konkret: <strong>siapa yang menanggung kerugian jika barang rusak, hilang, atau tenggelam selama pelayaran</strong>. Salah asumsi soal ini, dan Anda bisa jadi baru sadar tidak ada polis yang melindungi barang Anda tepat pada saat klaim dibutuhkan.

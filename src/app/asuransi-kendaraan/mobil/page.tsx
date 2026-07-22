@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_KENDARAAN, NOTE_KENDARAAN } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Mobil Bekasi – All Risk & TLO, Konvensional & Listrik",
-  description: "Asuransi mobil di Bekasi untuk kendaraan konvensional dan listrik. Pilihan All Risk atau TLO dengan premi sesuai tarif OJK. Kalkulator premi instan & konsultasi gratis.",
+  title: "Asuransi Mobil Bekasi – All Risk & TLO, Mobil Listrik",
+  description: "Asuransi mobil di Bekasi untuk kendaraan konvensional dan listrik. Pilihan All Risk atau TLO dengan premi sesuai tarif OJK. Konsultasi gratis.",
   keywords: "asuransi mobil bekasi, asuransi mobil listrik bekasi, all risk bekasi, tlo bekasi, kalkulator premi mobil bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kendaraan/mobil" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kendaraan/mobil" },
 };
 
 export default function MobilPage() {

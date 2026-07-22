@@ -11,7 +11,40 @@ export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
   keywords: "asuransi truk jababeka, asuransi truk mm2100, asuransi ekspedisi bekasi, asuransi truk kawasan industri cikarang, asuransi armada truk bekasi",
-  alternates: { canonical: `https://asuransibekasi.id/artikel/${meta.slug}` },
+  alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
+  authors: [{ name: "Nur Hidayat" }],
+  openGraph: {
+    title: meta.title,
+    description: meta.excerpt,
+    url: `https://asuransibekasi.biz.id/artikel/${meta.slug}`,
+    type: "article",
+    publishedTime: meta.publishedDate,
+    modifiedTime: meta.updatedDate,
+    authors: ["Nur Hidayat"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: meta.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: meta.title,
+    description: meta.excerpt,
+  },
+};
+
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: meta.title,
+  description: meta.excerpt,
+  image: "https://asuransibekasi.biz.id/og-image.png",
+  datePublished: meta.publishedDate,
+  dateModified: meta.updatedDate,
+  author: { "@type": "Person", name: "Nur Hidayat" },
+  publisher: {
+    "@type": "Organization",
+    name: "Asuransi Bekasi",
+    logo: { "@type": "ImageObject", url: "https://asuransibekasi.biz.id/favicon-512x512.png" },
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
 };
 
 const schemaFAQ = {
@@ -35,6 +68,7 @@ export default function ArtikelTrukEkspedisiJababeka() {
       heroDek={meta.excerpt}
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
 
       <p>
         Jababeka dan MM2100 adalah dua dari kawasan industri terpadat di koridor Cikarang-Bekasi, menampung ratusan pabrik manufaktur, elektronik, dan pergudangan yang bergantung penuh pada arus truk masuk-keluar setiap hari. Bagi pelaku usaha ekspedisi yang melayani kawasan ini, truk bukan sekadar alat angkut — ia adalah aset produktif yang menentukan apakah pengiriman ke klien tepat waktu atau tidak. Kegagalan melindunginya secara tepat bisa langsung mengganggu arus kas usaha.

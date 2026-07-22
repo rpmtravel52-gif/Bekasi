@@ -4,9 +4,9 @@ import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Custom Bond OB23 Bekasi – Jaminan Kepabeanan Importir",
-  description: "Custom Bond OB23 untuk importir di kawasan industri Bekasi. Jaminan kepabeanan pengganti pembayaran tunai bea masuk/pajak impor sesuai formulir OB-23 Bea Cukai. Konsultasi gratis.",
+  description: "Custom Bond OB23 untuk importir di kawasan industri Bekasi. Jaminan kepabeanan pengganti pembayaran tunai bea masuk/pajak impor. Konsultasi gratis.",
   keywords: "custom bond ob23 bekasi, jaminan kepabeanan bekasi, jaminan bea cukai bekasi, asuransi impor bekasi, formulir ob23",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-surety-bond/custom-bond-ob23" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-surety-bond/custom-bond-ob23" },
 };
 
 export default function CustomBondOb23Page() {

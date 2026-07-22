@@ -4,14 +4,14 @@ import ProdukLayout from "@/components/produk/ProdukLayout";
 import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Asuransi Kargo Bekasi – Kargo Darat & Marine Cargo (Laut/Udara)",
-  description: "Praktisi asuransi kargo independen di Bekasi. Asuransi kargo darat untuk ekspedisi lokal dan Marine Cargo untuk impor-ekspor via laut/udara. Konsultasi gratis untuk pelaku usaha logistik kawasan industri Bekasi.",
+  title: "Asuransi Kargo Bekasi – Kargo Darat & Marine Cargo",
+  description: "Praktisi asuransi kargo independen di Bekasi. Kargo darat untuk ekspedisi lokal dan Marine Cargo untuk impor-ekspor via laut/udara. Konsultasi gratis.",
   keywords: "asuransi kargo bekasi, marine cargo bekasi, asuransi pengiriman barang bekasi, asuransi ekspor impor bekasi, asuransi logistik jababeka",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kargo" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kargo" },
   openGraph: {
     title: "Asuransi Kargo Bekasi – Kargo Darat & Marine Cargo",
     description: "Solusi asuransi pengiriman barang darat, laut, dan udara untuk pelaku logistik di Bekasi. Konsultasi gratis.",
-    url: "https://asuransibekasi.id/asuransi-kargo",
+    url: "https://asuransibekasi.biz.id/asuransi-kargo",
   },
 };
 

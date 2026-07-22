@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_MACHINERY, NOTE_MACHINERY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Machinery Breakdown Bekasi – Proteksi Mesin Produksi",
-  description: "Asuransi Machinery Breakdown untuk mesin produksi pabrik di kawasan industri Bekasi. Lindungi mesin dari kerusakan mekanis dan elektris mendadak. Simulasi premi & konsultasi gratis.",
+  title: "Machinery Breakdown Bekasi – Proteksi Mesin Produksi",
+  description: "Asuransi Machinery Breakdown untuk mesin produksi pabrik di kawasan industri Bekasi. Lindungi mesin dari kerusakan mekanis dan elektris mendadak.",
   keywords: "asuransi machinery breakdown bekasi, asuransi mesin produksi bekasi, asuransi mesin pabrik jababeka, MB insurance bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-machinery/machinery-breakdown" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-machinery/machinery-breakdown" },
 };
 
 export default function MachineryBreakdownPage() {

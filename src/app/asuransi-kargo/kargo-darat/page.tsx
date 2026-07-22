@@ -4,9 +4,9 @@ import { PROSES_KARGO, NOTE_KARGO } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Asuransi Kargo Darat Bekasi – Ekspedisi & Distribusi",
-  description: "Asuransi kargo darat untuk pelaku usaha ekspedisi dan distribusi di Bekasi. Lindungi barang kiriman dari risiko kecelakaan, pencurian, dan kerusakan selama perjalanan. Konsultasi gratis.",
+  description: "Asuransi kargo darat untuk pelaku ekspedisi di Bekasi. Lindungi barang kiriman dari risiko kecelakaan, pencurian, dan kerusakan. Konsultasi gratis.",
   keywords: "asuransi kargo darat bekasi, asuransi pengiriman barang bekasi, asuransi ekspedisi bekasi, asuransi distribusi barang bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kargo/kargo-darat" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kargo/kargo-darat" },
 };
 
 export default function KargoDaratPage() {

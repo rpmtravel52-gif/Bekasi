@@ -4,9 +4,9 @@ import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Jaminan Pemeliharaan Bekasi – Maintenance Bond Pasca Proyek",
-  description: "Jasa Jaminan Pemeliharaan (maintenance bond) untuk kontraktor pasca serah terima proyek di Bekasi. Menjamin perbaikan cacat selama masa pemeliharaan. Konsultasi gratis.",
+  description: "Jaminan Pemeliharaan (maintenance bond) untuk kontraktor pasca serah terima proyek di Bekasi. Menjamin perbaikan cacat masa pemeliharaan.",
   keywords: "jaminan pemeliharaan bekasi, maintenance bond bekasi, jaminan retensi proyek bekasi, surety bond pemeliharaan bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-surety-bond/jaminan-pemeliharaan" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-surety-bond/jaminan-pemeliharaan" },
 };
 
 export default function JaminanPemeliharaanPage() {

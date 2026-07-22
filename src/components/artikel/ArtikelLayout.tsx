@@ -25,12 +25,26 @@ function formatTanggal(iso: string) {
   return d.toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
 }
 
+const SITE_URL = "https://asuransibekasi.biz.id";
+
 export default function ArtikelLayout({ meta, breadcrumbLabel, heroBadge, heroTitle, heroDek, children }: Props) {
   const theme = HERO_THEMES[meta.heroColor];
+
+  const schemaBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Beranda", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Artikel", item: `${SITE_URL}/artikel` },
+      { "@type": "ListItem", position: 3, name: meta.clusterLabel, item: `${SITE_URL}${CLUSTER_HREF[meta.cluster]}` },
+      { "@type": "ListItem", position: 4, name: breadcrumbLabel, item: `${SITE_URL}/artikel/${meta.slug}` },
+    ],
+  };
 
   return (
     <>
       <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
       <article className="pt-[68px]">
         {/* Breadcrumb */}
         <div className="bg-cream border-b border-black/8 px-[5vw] py-3">
@@ -59,7 +73,7 @@ export default function ArtikelLayout({ meta, breadcrumbLabel, heroBadge, heroTi
             {/* EEAT byline */}
             <div className="flex items-center gap-3 mt-8 pt-6 border-t border-white/15">
               <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center font-heading text-white text-sm font-bold flex-shrink-0">
-                RD
+                NH
               </div>
               <div className="text-sm">
                 <div className="text-white font-semibold">Nur Hidayat</div>

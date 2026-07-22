@@ -11,7 +11,40 @@ export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
   keywords: "cara klaim asuransi mobil banjir bekasi, klaim asuransi mobil kebanjiran, langkah klaim mobil banjir, asuransi mobil banjir kali bekasi, klaim water hammer mobil",
-  alternates: { canonical: `https://asuransibekasi.id/artikel/${meta.slug}` },
+  alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
+  authors: [{ name: "Nur Hidayat" }],
+  openGraph: {
+    title: meta.title,
+    description: meta.excerpt,
+    url: `https://asuransibekasi.biz.id/artikel/${meta.slug}`,
+    type: "article",
+    publishedTime: meta.publishedDate,
+    modifiedTime: meta.updatedDate,
+    authors: ["Nur Hidayat"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: meta.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: meta.title,
+    description: meta.excerpt,
+  },
+};
+
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: meta.title,
+  description: meta.excerpt,
+  image: "https://asuransibekasi.biz.id/og-image.png",
+  datePublished: meta.publishedDate,
+  dateModified: meta.updatedDate,
+  author: { "@type": "Person", name: "Nur Hidayat" },
+  publisher: {
+    "@type": "Organization",
+    name: "Asuransi Bekasi",
+    logo: { "@type": "ImageObject", url: "https://asuransibekasi.biz.id/favicon-512x512.png" },
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
 };
 
 const schemaFAQ = {
@@ -35,6 +68,7 @@ export default function ArtikelKlaimMobilBanjirBekasi() {
       heroDek={meta.excerpt}
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
 
       <p>
         Musim hujan setiap tahun selalu membawa cerita yang sama di sejumlah titik Bekasi: luapan Kali Bekasi yang merendam Perumnas III dan sekitarnya, genangan di kawasan Pondok Gede, hingga banjir kiriman yang tiba-tiba naik di malam hari saat kendaraan sedang diparkir di halaman rumah. Bagi pemilik mobil yang mengalaminya, kepanikan sering membuat langkah-langkah penting justru terlewat — padahal urutan penanganan yang tepat sangat menentukan apakah klaim asuransi bisa cair dengan lancar atau justru ditolak.

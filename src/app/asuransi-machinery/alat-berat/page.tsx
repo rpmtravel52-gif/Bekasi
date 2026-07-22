@@ -4,9 +4,9 @@ import { PROSES_MACHINERY, NOTE_MACHINERY } from "@/components/produk/prosesVari
 
 export const metadata: Metadata = {
   title: "Asuransi Alat Berat Bekasi – CPM Excavator, Crane & Forklift",
-  description: "Asuransi alat berat (Contractor's Plant & Machinery/CPM) di Bekasi untuk excavator, crane, forklift, dan alat berat lain. Lindungi aset operasional proyek dan pabrik Anda. Konsultasi gratis.",
+  description: "Asuransi alat berat (CPM) di Bekasi untuk excavator, crane, forklift, dan alat berat lain. Lindungi aset operasional proyek dan pabrik Anda. Konsultasi gratis.",
   keywords: "asuransi alat berat bekasi, CPM insurance bekasi, asuransi excavator bekasi, asuransi crane bekasi, asuransi forklift bekasi, contractor plant machinery bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-machinery/alat-berat" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-machinery/alat-berat" },
 };
 
 export default function AlatBeratPage() {

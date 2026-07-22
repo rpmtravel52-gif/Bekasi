@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_KENDARAAN, NOTE_KENDARAAN } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Truk & Kendaraan Niaga Bekasi – Ekspedisi & Logistik",
-  description: "Asuransi truk dan kendaraan niaga untuk pelaku usaha ekspedisi dan logistik di kawasan industri Bekasi: Jababeka, MM2100, EJIP. Perlindungan kendaraan dan muatan. Konsultasi gratis.",
+  title: "Asuransi Truk & Kendaraan Niaga Bekasi – Ekspedisi",
+  description: "Asuransi truk dan kendaraan niaga untuk pelaku ekspedisi dan logistik di kawasan industri Bekasi. Perlindungan kendaraan dan muatan. Konsultasi gratis.",
   keywords: "asuransi truk bekasi, asuransi kendaraan niaga bekasi, asuransi ekspedisi bekasi, asuransi logistik bekasi, asuransi truk jababeka",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kendaraan/truk-kendaraan-niaga" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kendaraan/truk-kendaraan-niaga" },
 };
 
 export default function TrukPage() {

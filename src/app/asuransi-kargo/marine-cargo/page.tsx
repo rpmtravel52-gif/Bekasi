@@ -4,9 +4,9 @@ import { PROSES_KARGO, NOTE_KARGO } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Marine Cargo Insurance Bekasi – Impor Ekspor Laut & Udara",
-  description: "Marine Cargo Insurance untuk importir dan eksportir di Bekasi. Lindungi barang yang dikirim via jalur laut dan udara internasional. Simulasi premi & konsultasi gratis.",
+  description: "Marine Cargo Insurance untuk importir dan eksportir di Bekasi. Lindungi barang kiriman via jalur laut dan udara internasional. Konsultasi gratis.",
   keywords: "marine cargo insurance bekasi, asuransi impor ekspor bekasi, asuransi kargo laut bekasi, asuransi kargo udara bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kargo/marine-cargo" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kargo/marine-cargo" },
 };
 
 export default function MarineCargoPage() {

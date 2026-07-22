@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Jaminan Penawaran Bekasi – Bid Bond untuk Tender Proyek",
   description: "Jasa jaminan penawaran (bid bond) untuk kontraktor yang mengikuti tender proyek pemerintah maupun swasta di Bekasi. Proses cepat, konsultasi gratis.",
   keywords: "jaminan penawaran bekasi, bid bond bekasi, jaminan tender bekasi, surety bond tender bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-surety-bond/jaminan-penawaran" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-surety-bond/jaminan-penawaran" },
 };
 
 export default function JaminanPenawaranPage() {

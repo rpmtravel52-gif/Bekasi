@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["asuransibekasi.id"],
+    domains: ["asuransibekasi.biz.id"],
     formats: ["image/avif", "image/webp"],
   },
 

@@ -11,7 +11,40 @@ export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
   keywords: "asuransi pabrik jababeka, asuransi kawasan industri cikarang, property all risk jababeka, kebakaran gudang jababeka",
-  alternates: { canonical: `https://asuransibekasi.id/artikel/${meta.slug}` },
+  alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
+  authors: [{ name: "Nur Hidayat" }],
+  openGraph: {
+    title: meta.title,
+    description: meta.excerpt,
+    url: `https://asuransibekasi.biz.id/artikel/${meta.slug}`,
+    type: "article",
+    publishedTime: meta.publishedDate,
+    modifiedTime: meta.updatedDate,
+    authors: ["Nur Hidayat"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: meta.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: meta.title,
+    description: meta.excerpt,
+  },
+};
+
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: meta.title,
+  description: meta.excerpt,
+  image: "https://asuransibekasi.biz.id/og-image.png",
+  datePublished: meta.publishedDate,
+  dateModified: meta.updatedDate,
+  author: { "@type": "Person", name: "Nur Hidayat" },
+  publisher: {
+    "@type": "Organization",
+    name: "Asuransi Bekasi",
+    logo: { "@type": "ImageObject", url: "https://asuransibekasi.biz.id/favicon-512x512.png" },
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
 };
 
 const schemaFAQ = {
@@ -34,6 +67,7 @@ export default function ArtikelPabrikJababeka() {
       heroDek={meta.excerpt}
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
 
       <p>
         Jababeka adalah salah satu kawasan industri tertua dan terluas di Cikarang, Kabupaten Bekasi, menaungi ratusan perusahaan manufaktur dari sektor otomotif, elektronik, hingga tekstil. Skala inilah yang membuat keputusan asuransi properti di sini tidak bisa disamakan dengan mengasuransikan ruko atau rumah biasa — nilai aset per lokasi jauh lebih besar, dan satu insiden bisa berdampak ke ratusan karyawan sekaligus.

@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_KENDARAAN, NOTE_KENDARAAN } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Bus Bekasi – Bus Pariwisata, Karyawan & Antar-Jemput",
-  description: "Asuransi bus untuk operator bus pariwisata, bus karyawan, dan bus antar-jemput di Bekasi. Perlindungan kendaraan sekaligus tanggung jawab terhadap penumpang. Konsultasi gratis.",
+  title: "Asuransi Bus Bekasi – Pariwisata, Karyawan & Antar-Jemput",
+  description: "Asuransi bus untuk operator bus pariwisata, karyawan, dan antar-jemput di Bekasi. Perlindungan kendaraan sekaligus tanggung jawab penumpang. Konsultasi gratis.",
   keywords: "asuransi bus bekasi, asuransi bus pariwisata bekasi, asuransi bus karyawan bekasi, asuransi bus antar jemput bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kendaraan/bus" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kendaraan/bus" },
 };
 
 export default function BusPage() {

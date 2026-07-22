@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Asuransi Kebakaran Bekasi – Ruko, Toko & Bangunan Usaha",
   description: "Asuransi kebakaran (FLEXAS) untuk ruko, toko, dan bangunan usaha di Bekasi. Premi terjangkau, proses cepat, konsultasi gratis dengan praktisi lokal Bekasi.",
   keywords: "asuransi kebakaran bekasi, asuransi ruko bekasi, asuransi toko bekasi, flexas bekasi, asuransi bangunan usaha bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-properti/kebakaran" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-properti/kebakaran" },
 };
 
 export default function KebakaranPage() {

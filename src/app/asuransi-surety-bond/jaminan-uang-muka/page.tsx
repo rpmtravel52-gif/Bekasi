@@ -4,9 +4,9 @@ import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Jaminan Uang Muka Bekasi – Advance Payment Bond Kontraktor",
-  description: "Jasa Jaminan Uang Muka (advance payment bond) untuk kontraktor yang menerima DP proyek di Bekasi. Melindungi pemberi kerja dari risiko penyalahgunaan dana awal. Konsultasi gratis.",
+  description: "Jaminan Uang Muka (advance payment bond) untuk kontraktor penerima DP proyek di Bekasi. Melindungi pemberi kerja dari risiko penyalahgunaan dana.",
   keywords: "jaminan uang muka bekasi, advance payment bond bekasi, jaminan dp proyek bekasi, surety bond uang muka bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-surety-bond/jaminan-uang-muka" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-surety-bond/jaminan-uang-muka" },
 };
 
 export default function JaminanUangMukaPage() {

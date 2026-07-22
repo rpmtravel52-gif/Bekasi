@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Pabrik Bekasi – Jababeka, MM2100, EJIP & Delta Silicon",
-  description: "Asuransi pabrik untuk industri manufaktur di kawasan industri Bekasi: Jababeka, MM2100, EJIP, Delta Silicon. Lindungi bangunan, aset tetap, dan fasilitas produksi Anda.",
+  title: "Asuransi Pabrik Bekasi – Jababeka, MM2100 & EJIP",
+  description: "Asuransi pabrik untuk industri manufaktur di kawasan industri Bekasi. Lindungi bangunan, aset tetap, dan fasilitas produksi Anda. Konsultasi gratis.",
   keywords: "asuransi pabrik bekasi, asuransi jababeka, asuransi mm2100, asuransi ejip, asuransi delta silicon, asuransi industri manufaktur bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-properti/pabrik" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-properti/pabrik" },
 };
 
 export default function PabrikPage() {

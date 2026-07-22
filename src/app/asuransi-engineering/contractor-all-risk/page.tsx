@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_ENGINEERING, NOTE_ENGINEERING } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Contractor All Risk (CAR) Bekasi – Asuransi Proyek Konstruksi",
-  description: "Asuransi Contractor All Risk (CAR) untuk proyek konstruksi di Bekasi. Lindungi pekerjaan, material, dan peralatan dari awal pembangunan hingga serah terima. Simulasi premi & konsultasi gratis.",
+  title: "Contractor All Risk (CAR) Bekasi – Asuransi Konstruksi",
+  description: "Asuransi Contractor All Risk (CAR) untuk proyek konstruksi di Bekasi. Lindungi pekerjaan, material, dan peralatan sejak awal hingga serah terima.",
   keywords: "contractor all risk bekasi, CAR bekasi, asuransi proyek konstruksi bekasi, asuransi kontraktor bekasi, asuransi pembangunan pabrik bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-engineering/contractor-all-risk" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-engineering/contractor-all-risk" },
 };
 
 export default function CarPage() {

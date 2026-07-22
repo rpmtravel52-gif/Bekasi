@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://asuransibekasi.id/sitemap.xml",
-    host: "https://asuransibekasi.id",
+    sitemap: "https://asuransibekasi.biz.id/sitemap.xml",
+    host: "https://asuransibekasi.biz.id",
   };
 }

@@ -4,16 +4,16 @@ import ProdukLayout from "@/components/produk/ProdukLayout";
 import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Asuransi Properti Bekasi – PAR, Kebakaran, Gudang, Pabrik & Rumah",
+  title: "Asuransi Properti Bekasi – PAR, Kebakaran & Pabrik",
   description:
-    "Praktisi asuransi properti independen di Bekasi. Lindungi rumah, ruko, gudang, dan pabrik di kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon dari kebakaran, banjir, dan risiko fisik lainnya. Konsultasi gratis.",
+    "Praktisi asuransi properti independen di Bekasi. Lindungi rumah, ruko, gudang, dan pabrik dari kebakaran, banjir, dan risiko fisik lainnya. Konsultasi gratis.",
   keywords:
     "asuransi properti bekasi, asuransi kebakaran bekasi, property all risk bekasi, asuransi pabrik bekasi, asuransi gudang bekasi, asuransi rumah bekasi, asuransi kawasan industri jababeka, asuransi mm2100, asuransi ejip",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-properti" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-properti" },
   openGraph: {
-    title: "Asuransi Properti Bekasi – PAR, Kebakaran, Gudang, Pabrik & Rumah",
+    title: "Asuransi Properti Bekasi – PAR, Kebakaran & Pabrik",
     description: "Solusi perlindungan properti lengkap untuk personal dan industri di Bekasi. Konsultasi gratis, analisis risiko lokasi.",
-    url: "https://asuransibekasi.id/asuransi-properti",
+    url: "https://asuransibekasi.biz.id/asuransi-properti",
   },
 };
 

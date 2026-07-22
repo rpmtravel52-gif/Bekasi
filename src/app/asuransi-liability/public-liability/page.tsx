@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_LIABILITY, NOTE_LIABILITY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Public Liability Bekasi – Tanggung Gugat Pihak Ketiga",
-  description: "Asuransi Public Liability untuk bisnis di Bekasi. Lindungi perusahaan dari klaim pihak ketiga akibat cedera badan atau kerusakan properti di lokasi usaha. Simulasi premi & konsultasi gratis.",
+  title: "Asuransi Public Liability Bekasi – Proteksi Pihak Ketiga",
+  description: "Asuransi Public Liability untuk bisnis di Bekasi. Lindungi perusahaan dari klaim pihak ketiga akibat cedera badan atau kerusakan properti. Konsultasi gratis.",
   keywords: "public liability bekasi, asuransi tanggung gugat bekasi, asuransi tanggung jawab hukum bekasi, third party liability bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-liability/public-liability" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-liability/public-liability" },
 };
 
 export default function PublicLiabilityPage() {

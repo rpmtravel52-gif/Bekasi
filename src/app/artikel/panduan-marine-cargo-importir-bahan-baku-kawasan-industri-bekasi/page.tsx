@@ -11,7 +11,40 @@ export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
   keywords: "marine cargo bekasi, asuransi impor bahan baku cikarang, asuransi kargo jababeka, cikarang dry port asuransi, marine cargo insurance kawasan industri",
-  alternates: { canonical: `https://asuransibekasi.id/artikel/${meta.slug}` },
+  alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
+  authors: [{ name: "Nur Hidayat" }],
+  openGraph: {
+    title: meta.title,
+    description: meta.excerpt,
+    url: `https://asuransibekasi.biz.id/artikel/${meta.slug}`,
+    type: "article",
+    publishedTime: meta.publishedDate,
+    modifiedTime: meta.updatedDate,
+    authors: ["Nur Hidayat"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: meta.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: meta.title,
+    description: meta.excerpt,
+  },
+};
+
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: meta.title,
+  description: meta.excerpt,
+  image: "https://asuransibekasi.biz.id/og-image.png",
+  datePublished: meta.publishedDate,
+  dateModified: meta.updatedDate,
+  author: { "@type": "Person", name: "Nur Hidayat" },
+  publisher: {
+    "@type": "Organization",
+    name: "Asuransi Bekasi",
+    logo: { "@type": "ImageObject", url: "https://asuransibekasi.biz.id/favicon-512x512.png" },
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
 };
 
 const schemaFAQ = {
@@ -35,6 +68,7 @@ export default function ArtikelMarineCargoBahanBaku() {
       heroDek={meta.excerpt}
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
 
       <p>
         Bekasi dan Cikarang adalah salah satu simpul manufaktur terbesar di Indonesia — Jababeka, MM2100, EJIP, dan kawasan mandiri di sekitarnya menampung ribuan pabrik yang sebagian besar bahan bakunya masih diimpor dari Asia, Eropa, atau Amerika. Bahan baku itu tidak langsung "muncul" di gudang pabrik. Ia melewati rantai perjalanan panjang: pelayaran internasional, bongkar di Tanjung Priok, proses kepabeanan, lalu diteruskan ke Cikarang Dry Port atau langsung ke pabrik via trucking. Setiap titik dalam rantai ini punya risikonya sendiri — dan Marine Cargo Insurance adalah satu-satunya instrumen yang menjamin seluruh rantai itu sebagai satu kesatuan.

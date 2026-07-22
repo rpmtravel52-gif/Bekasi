@@ -4,9 +4,9 @@ import { PROSES_SURETY, NOTE_SURETY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
   title: "Jaminan Pelaksanaan Bekasi – Performance Bond Kontraktor",
-  description: "Jasa Jaminan Pelaksanaan (performance bond) untuk kontraktor proyek pemerintah, BUMN, dan swasta di Bekasi. Wajib sebelum penandatanganan kontrak. Konsultasi gratis.",
+  description: "Jaminan Pelaksanaan (performance bond) untuk kontraktor proyek pemerintah, BUMN, dan swasta di Bekasi. Wajib sebelum tanda tangan kontrak.",
   keywords: "jaminan pelaksanaan bekasi, performance bond bekasi, surety bond kontraktor bekasi, jaminan kontrak proyek bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-surety-bond/jaminan-pelaksanaan" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-surety-bond/jaminan-pelaksanaan" },
 };
 
 export default function JaminanPelaksanaanPage() {

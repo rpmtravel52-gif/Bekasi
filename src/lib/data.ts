@@ -2,7 +2,7 @@
 export const KONTAK = {
   wa: "6281270826212",
   waDisplay: "0812-7082-6212",
-  email: "nur@asuransibekasi.id",
+  email: "nur@asuransibekasi.biz.id",
   kota: "Bekasi, Jawa Barat",
 } as const;
 

@@ -4,14 +4,14 @@ import ProdukLayout from "@/components/produk/ProdukLayout";
 import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Asuransi Surety Bond Bekasi – Jaminan Tender, Pelaksanaan & Custom Bond",
-  description: "Praktisi surety bond independen di Bekasi. Jaminan Penawaran, Pelaksanaan, Uang Muka, Pemeliharaan, hingga Custom Bond OB23 untuk kontraktor dan importir di kawasan industri Bekasi. Konsultasi gratis.",
+  title: "Surety Bond Bekasi – Jaminan Tender & Pelaksanaan",
+  description: "Praktisi surety bond independen di Bekasi. Jaminan Penawaran, Pelaksanaan, Uang Muka, Pemeliharaan, hingga Custom Bond OB23. Konsultasi gratis.",
   keywords: "surety bond bekasi, jaminan tender bekasi, bid bond bekasi, performance bond bekasi, custom bond ob23 bekasi, jaminan kepabeanan bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-surety-bond" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-surety-bond" },
   openGraph: {
-    title: "Asuransi Surety Bond Bekasi – Jaminan Tender & Custom Bond",
+    title: "Surety Bond Bekasi – Jaminan Tender & Pelaksanaan",
     description: "Solusi jaminan proyek dan kepabeanan lengkap untuk kontraktor dan importir di Bekasi. Konsultasi gratis.",
-    url: "https://asuransibekasi.id/asuransi-surety-bond",
+    url: "https://asuransibekasi.biz.id/asuransi-surety-bond",
   },
 };
 

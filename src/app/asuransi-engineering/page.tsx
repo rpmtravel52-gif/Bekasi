@@ -4,14 +4,14 @@ import ProdukLayout from "@/components/produk/ProdukLayout";
 import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Asuransi Engineering Bekasi – Contractor All Risk (CAR) & CECR",
-  description: "Praktisi asuransi engineering independen di Bekasi. Contractor All Risk (CAR) untuk proyek konstruksi dan CECR untuk infrastruktur sipil yang telah selesai dibangun. Konsultasi gratis.",
+  title: "Asuransi Engineering Bekasi – CAR & CECR",
+  description: "Praktisi asuransi engineering independen di Bekasi. Contractor All Risk (CAR) untuk proyek konstruksi dan CECR untuk infrastruktur sipil. Konsultasi gratis.",
   keywords: "asuransi engineering bekasi, contractor all risk bekasi, CAR bekasi, CECR bekasi, asuransi konstruksi bekasi, asuransi proyek sipil bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-engineering" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-engineering" },
   openGraph: {
-    title: "Asuransi Engineering Bekasi – Contractor All Risk (CAR) & CECR",
+    title: "Asuransi Engineering Bekasi – CAR & CECR",
     description: "Solusi asuransi proyek konstruksi dan infrastruktur sipil di Bekasi. Konsultasi gratis, analisis risiko proyek.",
-    url: "https://asuransibekasi.id/asuransi-engineering",
+    url: "https://asuransibekasi.biz.id/asuransi-engineering",
   },
 };
 

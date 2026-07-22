@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Gudang Bekasi – Warehouse, Stok Barang & Pergudangan",
-  description: "Asuransi gudang (warehouse) di Bekasi untuk melindungi bangunan dan stok barang dari kebakaran, pencurian, dan kerusakan fisik. Cocok untuk pelaku logistik & distribusi di kawasan Bekasi.",
+  title: "Asuransi Gudang Bekasi – Warehouse & Stok Barang",
+  description: "Asuransi gudang (warehouse) di Bekasi untuk melindungi bangunan dan stok barang dari kebakaran, pencurian, dan kerusakan fisik. Konsultasi gratis.",
   keywords: "asuransi gudang bekasi, asuransi warehouse bekasi, asuransi pergudangan bekasi, asuransi stok barang bekasi, asuransi logistik bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-properti/gudang" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-properti/gudang" },
 };
 
 export default function GudangPage() {

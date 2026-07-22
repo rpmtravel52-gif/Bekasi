@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const BASE_URL = "https://asuransibekasi.id";
+const BASE_URL = "https://asuransibekasi.biz.id";
 
 // Heading font: Syne — dipakai di semua h1–h3, label section, nama brand
 const syne = Syne({
@@ -76,11 +76,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         "@type": ["LocalBusiness", "InsuranceAgency"],
         "@id": `${BASE_URL}/#organization`,
         "name": "Asuransi Bekasi",
-        "alternateName": "AsuransiBekasi.id",
+        "alternateName": "AsuransiBekasi.biz.id",
         "description": "Praktisi asuransi kerugian independen di Bekasi, melayani personal, UMKM, hingga industri di kawasan Jababeka, MM2100, EJIP, dan Delta Silicon.",
         "url": BASE_URL,
         "telephone": "+6281270826212",
-        "email": "nur@asuransibekasi.id",
+        "email": "nur@asuransibekasi.biz.id",
         "founder": { "@type": "Person", "name": "Nur Hidayat" },
         "address": {
           "@type": "PostalAddress",

@@ -4,9 +4,9 @@ import { PROSES_ENGINEERING, NOTE_ENGINEERING } from "@/components/produk/proses
 
 export const metadata: Metadata = {
   title: "Asuransi CECR Bekasi – Civil Engineering Completed Risks",
-  description: "Asuransi CECR (Civil Engineering Completed Risks) untuk infrastruktur sipil yang telah selesai dibangun di Bekasi. Perlindungan masa pemeliharaan jalan, jembatan, dan bangunan infrastruktur. Konsultasi gratis.",
+  description: "Asuransi CECR untuk infrastruktur sipil yang telah selesai dibangun di Bekasi — jalan, jembatan, dan bangunan pada masa pemeliharaan. Konsultasi gratis.",
   keywords: "asuransi CECR bekasi, civil engineering completed risks bekasi, asuransi masa pemeliharaan proyek bekasi, asuransi infrastruktur sipil bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-engineering/cecr" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-engineering/cecr" },
 };
 
 export default function CecrPage() {

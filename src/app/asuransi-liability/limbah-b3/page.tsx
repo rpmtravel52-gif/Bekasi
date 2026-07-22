@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_LIABILITY, NOTE_LIABILITY } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Asuransi Limbah B3 Bekasi – Liability Pencemaran Lingkungan Industri",
-  description: "Asuransi Limbah B3 untuk perusahaan manufaktur di kawasan industri Bekasi. Lindungi bisnis dari tanggung jawab hukum pencemaran lingkungan akibat limbah bahan berbahaya dan beracun. Konsultasi gratis.",
+  title: "Asuransi Limbah B3 Bekasi – Liability Pencemaran Lingkungan",
+  description: "Asuransi Limbah B3 untuk perusahaan manufaktur di kawasan industri Bekasi. Lindungi bisnis dari tanggung jawab hukum pencemaran lingkungan. Konsultasi gratis.",
   keywords: "asuransi limbah b3 bekasi, asuransi pencemaran lingkungan bekasi, environmental liability bekasi, asuransi limbah industri jababeka",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-liability/limbah-b3" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-liability/limbah-b3" },
 };
 
 export default function LimbahB3Page() {

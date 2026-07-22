@@ -3,10 +3,10 @@ import ProdukDetailPage from "@/components/produk/ProdukDetailPage";
 import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVariants";
 
 export const metadata: Metadata = {
-  title: "Property All Risk (PAR) Bekasi – Proteksi Pabrik & Gedung Komersial",
-  description: "Asuransi Property All Risk (PAR) untuk pabrik, gudang besar, dan gedung komersial di kawasan industri Bekasi — Jababeka, MM2100, EJIP, Delta Silicon. Simulasi premi & konsultasi gratis.",
+  title: "Property All Risk (PAR) Bekasi – Pabrik & Gedung Komersial",
+  description: "Asuransi Property All Risk (PAR) untuk pabrik, gudang besar, dan gedung komersial di kawasan industri Bekasi. Konsultasi gratis.",
   keywords: "property all risk bekasi, PAR bekasi, asuransi pabrik jababeka, asuransi gedung komersial bekasi, asuransi industri mm2100",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-properti/property-all-risk" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-properti/property-all-risk" },
 };
 
 export default function ParPage() {

@@ -5,13 +5,13 @@ import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Asuransi Liability Bekasi – Public Liability & Limbah B3",
-  description: "Praktisi asuransi liability independen di Bekasi. Public Liability untuk bisnis dan Asuransi Limbah B3 untuk perusahaan manufaktur di kawasan industri Jababeka, MM2100, EJIP, dan Delta Silicon. Konsultasi gratis.",
+  description: "Praktisi asuransi liability independen di Bekasi. Public Liability untuk bisnis dan Asuransi Limbah B3 untuk manufaktur kawasan industri. Konsultasi gratis.",
   keywords: "asuransi liability bekasi, public liability bekasi, asuransi limbah b3 bekasi, asuransi tanggung gugat bekasi, asuransi lingkungan industri bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-liability" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-liability" },
   openGraph: {
     title: "Asuransi Liability Bekasi – Public Liability & Limbah B3",
     description: "Perlindungan tanggung jawab hukum untuk bisnis dan industri di Bekasi. Konsultasi gratis, analisis risiko sesuai jenis usaha.",
-    url: "https://asuransibekasi.id/asuransi-liability",
+    url: "https://asuransibekasi.biz.id/asuransi-liability",
   },
 };
 

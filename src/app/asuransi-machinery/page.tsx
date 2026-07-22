@@ -4,14 +4,14 @@ import ProdukLayout from "@/components/produk/ProdukLayout";
 import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Asuransi Machinery Bekasi – Machinery Breakdown & Alat Berat (CPM)",
-  description: "Praktisi asuransi mesin dan alat berat independen di Bekasi. Machinery Breakdown untuk mesin produksi dan Asuransi Alat Berat (CPM) untuk excavator, crane, dan forklift. Konsultasi gratis.",
+  title: "Asuransi Machinery Bekasi – Breakdown & Alat Berat (CPM)",
+  description: "Praktisi asuransi mesin dan alat berat independen di Bekasi. Machinery Breakdown untuk mesin produksi dan Asuransi Alat Berat (CPM). Konsultasi gratis.",
   keywords: "asuransi machinery bekasi, machinery breakdown bekasi, asuransi alat berat bekasi, asuransi excavator bekasi, asuransi crane bekasi, CPM insurance bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-machinery" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-machinery" },
   openGraph: {
-    title: "Asuransi Machinery Bekasi – Machinery Breakdown & Alat Berat (CPM)",
+    title: "Asuransi Machinery Bekasi – Breakdown & Alat Berat (CPM)",
     description: "Solusi asuransi mesin produksi dan alat berat untuk industri di Bekasi. Konsultasi gratis, analisis risiko mekanis.",
-    url: "https://asuransibekasi.id/asuransi-machinery",
+    url: "https://asuransibekasi.biz.id/asuransi-machinery",
   },
 };
 

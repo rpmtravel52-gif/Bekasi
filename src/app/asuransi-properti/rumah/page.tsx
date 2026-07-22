@@ -4,9 +4,9 @@ import { PROSES_PROPERTI, NOTE_PROPERTI } from "@/components/produk/prosesVarian
 
 export const metadata: Metadata = {
   title: "Asuransi Rumah Bekasi – Kebakaran, Pencurian & Banjir",
-  description: "Asuransi rumah tinggal untuk kawasan perumahan Bekasi. Lindungi rumah dari kebakaran, pencurian, hingga perluasan banjir untuk area rawan luapan musiman. Premi terjangkau, konsultasi gratis.",
+  description: "Asuransi rumah tinggal untuk kawasan perumahan Bekasi. Lindungi rumah dari kebakaran, pencurian, hingga perluasan banjir musiman. Konsultasi gratis.",
   keywords: "asuransi rumah bekasi, asuransi rumah tinggal bekasi, asuransi rumah banjir bekasi, asuransi kpr bekasi, asuransi perumahan bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-properti/rumah" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-properti/rumah" },
 };
 
 export default function RumahPage() {

@@ -5,13 +5,13 @@ import { KONTAK } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Asuransi Kendaraan Bekasi – Mobil, Bus & Truk Niaga",
-  description: "Praktisi asuransi kendaraan independen di Bekasi. Asuransi mobil, bus, dan truk niaga untuk personal maupun bisnis ekspedisi di kawasan industri Bekasi. Kalkulator premi & konsultasi gratis.",
+  description: "Praktisi asuransi kendaraan independen di Bekasi. Asuransi mobil, bus, dan truk niaga untuk personal maupun bisnis ekspedisi. Konsultasi gratis.",
   keywords: "asuransi kendaraan bekasi, asuransi mobil bekasi, asuransi bus bekasi, asuransi truk bekasi, asuransi kendaraan niaga bekasi",
-  alternates: { canonical: "https://asuransibekasi.id/asuransi-kendaraan" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kendaraan" },
   openGraph: {
     title: "Asuransi Kendaraan Bekasi – Mobil, Bus & Truk Niaga",
     description: "Solusi asuransi kendaraan lengkap untuk personal dan bisnis ekspedisi/logistik di Bekasi. Konsultasi gratis.",
-    url: "https://asuransibekasi.id/asuransi-kendaraan",
+    url: "https://asuransibekasi.biz.id/asuransi-kendaraan",
   },
 };
 

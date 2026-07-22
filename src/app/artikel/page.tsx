@@ -7,17 +7,27 @@ import { ARTIKEL_LIST } from "@/lib/artikel";
 export const metadata: Metadata = {
   title: "Artikel & Edukasi Asuransi Bekasi",
   description: "Panduan, studi kasus, dan edukasi asuransi kerugian untuk warga dan pelaku usaha di Bekasi — properti, kendaraan, liability, dan lainnya.",
-  alternates: { canonical: "https://asuransibekasi.id/artikel" },
+  alternates: { canonical: "https://asuransibekasi.biz.id/artikel" },
 };
 
 const HERO_DOT: Record<string, string> = {
   navy: "bg-gold", blue: "bg-sky-400", amber: "bg-amber-400", charcoal: "bg-orange-400", green: "bg-emerald-400",
 };
 
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibekasi.biz.id" },
+    { "@type": "ListItem", position: 2, name: "Artikel", item: "https://asuransibekasi.biz.id/artikel" },
+  ],
+};
+
 export default function ArtikelIndexPage() {
   return (
     <>
       <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
       <div className="pt-[68px]">
         <div className="bg-cream border-b border-black/8 px-[5vw] py-3">
           <div className="flex items-center gap-2 text-sm text-[#64748B]">
