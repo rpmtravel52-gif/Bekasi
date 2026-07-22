@@ -28,7 +28,7 @@ export default function About() {
             Kenali Nur Hidayat,<br />Praktisi dan Agen Anda
           </h2>
           <p className="text-lg leading-[1.85] text-[#64748B] max-w-[560px] mt-3">
-            Nur Hidayat percaya bahwa klien butuh Praktisi dan Agen yang berpihak pada mereka — bukan agen yang sekadar mengejar komisi penjualan polis. Memahami karakter Bekasi sebagai kawasan industri sekaligus permukiman padat membuat setiap rekomendasi lebih tepat sasaran.
+            Nur Hidayat percaya bahwa klien butuh Praktisi yang berpihak pada mereka — bukan agen yang sekadar mengejar komisi penjualan polis. Memahami karakter Bekasi sebagai kawasan industri sekaligus permukiman padat membuat setiap rekomendasi lebih tepat sasaran.
           </p>
           <ul className="flex flex-col gap-3 mt-5">
             {[
