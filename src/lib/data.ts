@@ -1,8 +1,8 @@
 // ─── KONTAK ───────────────────────────────────────────────────────────────────
 export const KONTAK = {
   wa: "6281270826212",
-  waDisplay: "0813-1556-592",
-  email: "rio@asuransibekasi.id",
+  waDisplay: "0812-7082-6212",
+  email: "nur@asuransibekasi.id",
   kota: "Bekasi, Jawa Barat",
 } as const;
 
