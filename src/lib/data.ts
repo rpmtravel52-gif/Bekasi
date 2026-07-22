@@ -197,12 +197,12 @@ export const TESTIMONI = [
     inisial: "NW",
     nama: "Nita Wulandari",
     peran: "Pemilik Ruko, Bekasi Timur",
-    teks: "Saya punya beberapa unit ruko di Bekasi. Pak Rio membantu mengasuransikan semua bangunan dengan harga yang efisien dan penjelasan yang sangat jelas soal risiko banjir musiman di area saya.",
+    teks: "Saya punya beberapa unit ruko di Bekasi. Nur membantu mengasuransikan semua bangunan dengan harga yang efisien dan penjelasan yang sangat jelas soal risiko banjir musiman di area saya.",
   },
   {
     inisial: "HS",
     nama: "Hendra Susanto",
     peran: "Manajer Pabrik, Kawasan Industri MM2100",
-    teks: "Kami butuh Property All Risk dan Machinery Breakdown untuk pabrik. Pak Rio memahami betul kebutuhan industri manufaktur dan membantu proses dengan cepat serta profesional.",
+    teks: "Kami butuh Property All Risk dan Machinery Breakdown untuk pabrik. Nur Hidayat memahami betul kebutuhan industri manufaktur dan membantu proses dengan cepat serta profesional.",
   },
 ];
