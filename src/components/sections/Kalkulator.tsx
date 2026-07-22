@@ -42,7 +42,7 @@ export default function Kalkulator() {
     const tLabel = tipe === "allrisk" ? "Comprehensive / All Risk" : "TLO (Total Loss Only)";
     const or = jenis === "listrik" ? 500_000 : 300_000;
     const waMsg = encodeURIComponent(
-      `Halo Pak Rio, saya ingin konsultasi asuransi mobil.\n\n- Plat: ${platText}\n- Jenis: ${jLabel}\n- Tipe: ${tLabel}\n- Harga: ${formatRp(harga)}\n- Estimasi Premi: ${formatRp(premi)}/tahun\n\nMohon info penawaran resminya. Terima kasih.`
+      `Halo Nur, saya ingin konsultasi asuransi mobil.\n\n- Plat: ${platText}\n- Jenis: ${jLabel}\n- Tipe: ${tLabel}\n- Harga: ${formatRp(harga)}\n- Estimasi Premi: ${formatRp(premi)}/tahun\n\nMohon info penawaran resminya. Terima kasih.`
     );
     setHasil({
       platText, wilayah: platValue, jenis, tipe, harga, premi,
