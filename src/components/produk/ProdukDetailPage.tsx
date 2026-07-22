@@ -277,7 +277,7 @@ export default function ProdukDetailPage(props: Props) {
         </div>
         <div className="max-w-[740px] mx-auto mt-8 bg-navy rounded-xl p-6 text-center">
           <div className="font-heading text-white text-base font-semibold mb-2">Masih Ada Pertanyaan?</div>
-          <p className="text-white/70 text-sm mb-4">Konsultasikan langsung dengan Pak Rio — gratis, cepat respons.</p>
+          <p className="text-white/70 text-sm mb-4">Konsultasikan langsung dengan Nur Hidayat — gratis, cepat respons.</p>
           <a href={`https://wa.me/${KONTAK.wa}`} className="inline-block bg-[#25D366] text-white px-7 py-3 rounded-lg font-bold text-sm no-underline hover:opacity-90 transition-all">
             💬 Tanya via WhatsApp
           </a>
@@ -326,7 +326,7 @@ export default function ProdukDetailPage(props: Props) {
           <p className="text-white/80 text-sm max-w-[480px] mx-auto mb-8">{props.ctaDesc}</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href={`https://wa.me/${KONTAK.wa}`} className="bg-[#25D366] text-white px-8 py-3.5 rounded-lg font-bold text-sm inline-flex items-center gap-2 no-underline hover:opacity-90 transition-all">
-              💬 WhatsApp Pak Rio Sekarang
+              💬 WhatsApp Nur Hidayat Sekarang
             </a>
             <a href={`mailto:${KONTAK.email}`} className="bg-white/8 border border-white/20 text-white px-7 py-3 rounded-lg font-medium text-sm no-underline hover:bg-white/12 transition-all">
               ✉️ Kirim Email
