@@ -13,8 +13,8 @@ export default function About() {
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 z-20 px-6 pb-6 pt-10">
-            <div className="font-heading text-white text-[1.3rem] font-bold leading-tight">Rio Diansyah</div>
-            <div className="text-gold2 text-sm font-medium mt-0.5">Konsultan Asuransi Kerugian</div>
+            <div className="font-heading text-white text-[1.3rem] font-bold leading-tight">Nur Hidayat</div>
+            <div className="text-gold2 text-sm font-medium mt-0.5">Praktisi dan Agen Asuransi Kerugian</div>
             <div className="flex items-center gap-2 mt-2 flex-wrap">
               <span className="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full">📍 Bekasi, Jawa Barat</span>
             </div>
@@ -23,12 +23,12 @@ export default function About() {
 
         {/* TEKS */}
         <div>
-          <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Tentang Konsultan</div>
+          <div className="text-xs font-bold tracking-[2.5px] uppercase text-gold mb-2">Tentang Praktisi dan Agen</div>
           <h2 className="font-heading text-[clamp(1.9rem,3vw,2.9rem)] leading-[1.22] text-navy">
-            Kenali Rio Diansyah,<br />Konsultan Anda
+            Kenali Nur Hidayat,<br />Praktisi dan Agen Anda
           </h2>
           <p className="text-lg leading-[1.85] text-[#64748B] max-w-[560px] mt-3">
-            Rio Diansyah percaya bahwa klien butuh konsultan yang berpihak pada mereka — bukan agen yang sekadar mengejar komisi penjualan polis. Memahami karakter Bekasi sebagai kawasan industri sekaligus permukiman padat membuat setiap rekomendasi lebih tepat sasaran.
+            Nur Hidayat percaya bahwa klien butuh Praktisi dan Agen yang berpihak pada mereka — bukan agen yang sekadar mengejar komisi penjualan polis. Memahami karakter Bekasi sebagai kawasan industri sekaligus permukiman padat membuat setiap rekomendasi lebih tepat sasaran.
           </p>
           <ul className="flex flex-col gap-3 mt-5">
             {[
