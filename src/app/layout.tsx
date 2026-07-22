@@ -81,7 +81,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         "url": BASE_URL,
         "telephone": "+6281270826212",
         "email": "nur@asuransibekasi.id",
-        "founder": { "@type": "Person", "name": "Rio Diansyah" },
+        "founder": { "@type": "Person", "name": "Nur Hidayat" },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Bekasi",
