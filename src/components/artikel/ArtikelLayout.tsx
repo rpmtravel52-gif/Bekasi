@@ -62,9 +62,9 @@ export default function ArtikelLayout({ meta, breadcrumbLabel, heroBadge, heroTi
                 RD
               </div>
               <div className="text-sm">
-                <div className="text-white font-semibold">Rio Diansyah</div>
+                <div className="text-white font-semibold">Nur Hidayat</div>
                 <div className="text-white/55 text-xs">
-                  Konsultan Asuransi Kerugian, Bekasi · Dipublikasikan {formatTanggal(meta.publishedDate)}
+                  Praktisi Asuransi Kerugian, Bekasi · Dipublikasikan {formatTanggal(meta.publishedDate)}
                   {meta.updatedDate !== meta.publishedDate && ` · Diperbarui ${formatTanggal(meta.updatedDate)}`}
                   {" · "}{meta.readTime} baca
                 </div>
