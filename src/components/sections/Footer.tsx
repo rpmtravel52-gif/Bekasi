@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-8 border-b border-white/7">
         <div>
           <div className="font-heading text-[1.3rem] font-bold text-white mb-2">Asuransi<span className="text-gold">Bekasi</span></div>
-          <p className="text-sm leading-[1.75] text-white/45">Konsultan asuransi kerugian independen di Bekasi. Melayani individu, UMKM, dan industri dengan solusi perlindungan yang tepat, transparan, dan dapat diandalkan.</p>
+          <p className="text-sm leading-[1.75] text-white/45">Praktisi asuransi kerugian independen di Bekasi. Melayani individu, UMKM, dan industri dengan solusi perlindungan yang tepat, transparan, dan dapat diandalkan.</p>
         </div>
         <div>
           <h4 className="text-[0.82rem] font-bold tracking-[1.2px] uppercase text-gold2 mb-4">Produk</h4>
@@ -22,7 +22,7 @@ export default function Footer() {
             {[
               { href: "#kalkulator", lbl: "Kalkulator Premi Mobil" },
               { href: "#faq", lbl: "FAQ Asuransi" },
-              { href: "#about", lbl: "Profil Konsultan" },
+              { href: "#about", lbl: "Profil Praktisi" },
               { href: "#contact", lbl: "Konsultasi Gratis" },
             ].map(l => (
               <li key={l.lbl}><a href={l.href} className="text-sm text-white/50 no-underline hover:text-gold2 transition-colors">{l.lbl}</a></li>
@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
       <div className="pt-5 flex justify-between items-center flex-wrap gap-3">
         <div className="text-[0.88rem] text-white/55">© 2026 Asuransi Bekasi – Nur Hidayat. Seluruh hak cipta dilindungi.</div>
-        <div className="text-[0.88rem] text-white/55">Konsultan Asuransi Kerugian Independen · Bekasi</div>
+        <div className="text-[0.88rem] text-white/55">Praktisi Asuransi Kerugian Independen · Bekasi</div>
       </div>
     </footer>
   );
