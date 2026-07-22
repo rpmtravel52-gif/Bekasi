@@ -1,6 +1,6 @@
 // ─── KONTAK ───────────────────────────────────────────────────────────────────
 export const KONTAK = {
-  wa: "628131556592",
+  wa: "6281270826212",
   waDisplay: "0813-1556-592",
   email: "rio@asuransibekasi.id",
   kota: "Bekasi, Jawa Barat",
