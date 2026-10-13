@@ -5,7 +5,7 @@ import { PROSES_ENGINEERING, NOTE_ENGINEERING } from "@/components/produk/proses
 export const metadata: Metadata = {
   title: "Contractor All Risk (CAR) Bekasi – Asuransi Konstruksi",
   description: "Asuransi Contractor All Risk (CAR) untuk proyek konstruksi di Bekasi. Lindungi pekerjaan, material, dan peralatan sejak awal hingga serah terima.",
-  keywords: "contractor all risk bekasi, CAR bekasi, asuransi proyek konstruksi bekasi, asuransi kontraktor bekasi, asuransi pembangunan pabrik bekasi",
+  keywords: "contractor all risk bekasi, CAR bekasi, asuransi proyek konstruksi bekasi, asuransi kontraktor bekasi",
   alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-engineering/contractor-all-risk" },
 };
 

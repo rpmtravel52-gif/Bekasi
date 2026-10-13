@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("liability", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "pp 22 2021 limbah b3, aturan limbah b3 bekasi, asuransi limbah b3 industri manufaktur, persetujuan teknis limbah b3, tps limbah b3 bekasi",
+  keywords: "pp 22 2021 limbah b3, persetujuan teknis limbah b3, tps limbah b3 bekasi, kewajiban pengelolaan limbah b3 manufaktur",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelLimbahB3PP222021() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini membahas kewajiban regulasi PP 22/2021 untuk pengelolaan limbah B3. Perlindungan asuransinya ada di halaman produk, dan contoh tuntutan di studi kasus." links={[{ href: "/asuransi-liability/limbah-b3", label: "Asuransi Limbah B3 Bekasi" },{ href: "/artikel/studi-kasus-tuntutan-pencemaran-lingkungan-bekasi", label: "Studi kasus tuntutan pencemaran lingkungan" }]} />
 
       <p>
         Kawasan industri di Bekasi — Jababeka, MM2100, EJIP, Delta Silicon, dan kawasan mandiri di Cikarang — menaungi ribuan pabrik manufaktur dari sektor otomotif, elektronik, tekstil, hingga kimia. Hampir semua proses produksi di sektor ini menghasilkan limbah bahan berbahaya dan beracun (B3) dalam bentuk oli bekas, sludge, pelarut kimia, hingga kemasan bekas bahan kimia. Sejak 2021, seluruh kewajiban pengelolaannya diatur secara terpadu dalam PP No. 22 Tahun 2021 tentang Penyelenggaraan Perlindungan dan Pengelolaan Lingkungan Hidup — dan pelanggarannya, seperti terlihat dari kasus nyata di Bekasi, bukan risiko yang bisa dianggap enteng.

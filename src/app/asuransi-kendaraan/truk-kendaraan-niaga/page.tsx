@@ -5,7 +5,7 @@ import { PROSES_KENDARAAN, NOTE_KENDARAAN } from "@/components/produk/prosesVari
 export const metadata: Metadata = {
   title: "Asuransi Truk & Kendaraan Niaga Bekasi – Ekspedisi",
   description: "Asuransi truk dan kendaraan niaga untuk pelaku ekspedisi dan logistik di kawasan industri Bekasi. Perlindungan kendaraan dan muatan. Konsultasi gratis.",
-  keywords: "asuransi truk bekasi, asuransi kendaraan niaga bekasi, asuransi ekspedisi bekasi, asuransi logistik bekasi, asuransi truk jababeka",
+  keywords: "asuransi truk bekasi, asuransi kendaraan niaga bekasi, asuransi armada truk bekasi, fleet insurance truk bekasi",
   alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kendaraan/truk-kendaraan-niaga" },
 };
 

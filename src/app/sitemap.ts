@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
+import { ARTIKEL_LIST } from "@/lib/artikel";
 
 const BASE_URL = "https://asuransibekasi.biz.id";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  // Tanggal tetap (bukan new Date()) agar lastmod jujur dan tidak berubah tiap build.
+  const PRODUK_LASTMOD = new Date("2026-10-13");
   const productPages = [
     "/asuransi-kendaraan",
     "/asuransi-kendaraan/mobil",
@@ -34,40 +36,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asuransi-surety-bond/jaminan-pemeliharaan",
     "/asuransi-surety-bond/custom-bond-ob23",
     "/artikel",
-    "/artikel/kenapa-perumahan-bekasi-timur-rawan-banjir-musiman",
-    "/artikel/panduan-asuransi-pabrik-jababeka",
-    "/artikel/par-vs-kebakaran-gudang-bekasi",
-    "/artikel/kesalahan-nilai-pertanggungan-rumah-bekasi",
-    "/artikel/panduan-asuransi-ruko-bekasi",
-    "/artikel/kenapa-pabrik-kawasan-industri-bekasi-wajib-public-liability",
-    "/artikel/aturan-limbah-b3-pp-22-2021-industri-manufaktur-bekasi",
-    "/artikel/studi-kasus-tuntutan-pencemaran-lingkungan-bekasi",
-    "/artikel/incoterms-fob-vs-cif-siapa-wajib-asuransikan-barang-impor",
-    "/artikel/panduan-marine-cargo-importir-bahan-baku-kawasan-industri-bekasi",
-    "/artikel/kenapa-ekspedisi-truk-perlu-asuransi-kargo-terpisah-dari-asuransi-kendaraan",
-    "/artikel/all-risk-vs-tlo-mobil-baru-bekasi",
-    "/artikel/panduan-asuransi-truk-ekspedisi-jababeka-mm2100",
-    "/artikel/biaya-asuransi-mobil-listrik-bekasi",
-    "/artikel/wajibkah-bus-karyawan-passenger-liability",
-    "/artikel/cara-klaim-asuransi-mobil-banjir-bekasi",
-    "/artikel/kenapa-kontraktor-bekasi-butuh-surety-bond-sebelum-tender",
-    "/artikel/syarat-surety-bond-proyek-bekasi",
-    "/artikel/cara-mengurus-surety-bond-bekasi-tanpa-menghambat-tender",
-    "/artikel/kesalahan-pengajuan-surety-bond-kontraktor-bekasi",
-    "/artikel/tips-memilih-penerbit-surety-bond-bekasi",
   ];
   return [
     {
       url: BASE_URL,
-      lastModified: now,
+      lastModified: PRODUK_LASTMOD,
       changeFrequency: "weekly",
       priority: 1,
     },
     ...productPages.map((path) => ({
       url: `${BASE_URL}${path}`,
-      lastModified: now,
+      lastModified: PRODUK_LASTMOD,
       changeFrequency: "monthly" as const,
       priority: ["/asuransi-properti", "/asuransi-liability", "/asuransi-kendaraan", "/asuransi-engineering", "/asuransi-machinery", "/asuransi-kargo", "/asuransi-surety-bond", "/artikel"].includes(path) ? 0.9 : 0.8,
+    })),
+    ...ARTIKEL_LIST.map((a) => ({
+      url: `${BASE_URL}/artikel/${a.slug}`,
+      lastModified: new Date(a.updatedDate),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
   ];
 }

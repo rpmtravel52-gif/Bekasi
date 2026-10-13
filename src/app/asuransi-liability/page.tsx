@@ -6,7 +6,7 @@ import { KONTAK } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Asuransi Liability Bekasi – Public Liability & Limbah B3",
   description: "Praktisi asuransi liability independen di Bekasi. Public Liability untuk bisnis dan Asuransi Limbah B3 untuk manufaktur kawasan industri. Konsultasi gratis.",
-  keywords: "asuransi liability bekasi, public liability bekasi, asuransi limbah b3 bekasi, asuransi tanggung gugat bekasi, asuransi lingkungan industri bekasi",
+  keywords: "asuransi liability bekasi, asuransi lingkungan industri bekasi, asuransi tanggung jawab hukum perusahaan bekasi",
   alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-liability" },
   openGraph: {
     title: "Asuransi Liability Bekasi – Public Liability & Limbah B3",

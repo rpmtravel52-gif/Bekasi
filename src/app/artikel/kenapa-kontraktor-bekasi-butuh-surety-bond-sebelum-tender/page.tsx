@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("surety", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "surety bond tender bekasi, jaminan penawaran wajib, bid bond kontraktor bekasi, jaminan tender konstruksi bekasi, syarat tender konstruksi bekasi",
+  keywords: "wajib jaminan penawaran hps 10 miliar, penawaran gugur tanpa jaminan, syarat tender konstruksi bekasi, kenapa kontraktor butuh surety bond",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelKenapaButuhSuretyBond() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini menjelaskan kewajiban jaminan penawaran dalam tender. Produk dan pengajuannya ada di halaman Jaminan Penawaran; alur pengurusannya di artikel cara mengurus." links={[{ href: "/asuransi-surety-bond/jaminan-penawaran", label: "Jaminan Penawaran (Bid Bond) Bekasi" },{ href: "/artikel/cara-mengurus-surety-bond-bekasi-tanpa-menghambat-tender", label: "Cara mengurus surety bond tanpa menghambat tender" }]} />
 
       <p>
         Kawasan industri Bekasi — Jababeka, MM2100, EJIP, Delta Silicon, dan kawasan mandiri di Cikarang — terus menggerakkan tender konstruksi bernilai besar: pembangunan pabrik baru, revitalisasi infrastruktur kawasan, hingga proyek pemerintah daerah di Kota dan Kabupaten Bekasi. Bagi kontraktor, kesempatan ini datang dengan satu syarat administrasi yang sifatnya mutlak: Jaminan Penawaran, atau yang lebih dikenal sebagai bid bond.

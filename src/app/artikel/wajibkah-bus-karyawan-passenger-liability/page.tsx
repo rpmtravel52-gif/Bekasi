@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kendaraan", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "passenger liability bus karyawan, asuransi bus karyawan bekasi, tanggung jawab penumpang bus perusahaan, asuransi bus antar jemput karyawan, wajib passenger liability",
+  keywords: "passenger liability bus karyawan, tanggung jawab hukum bus antar jemput karyawan, wajib passenger liability, tanggung jawab penumpang bus perusahaan",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelBusKaryawanPassengerLiability() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini membahas aspek tanggung jawab hukum atas penumpang bus karyawan. Polis kendaraan bus-nya ada di halaman produk bus." links={[{ href: "/asuransi-kendaraan/bus", label: "Asuransi Bus Bekasi — pariwisata, karyawan & antar-jemput" },{ href: "/asuransi-liability/public-liability", label: "Asuransi Public Liability Bekasi" }]} />
 
       <p>
         Hampir setiap kawasan industri di Bekasi — mulai dari Jababeka, MM2100, EJIP, hingga Delta Silicon — punya pemandangan yang sama setiap pagi dan sore: puluhan bus antar-jemput karyawan hilir mudik membawa ribuan pekerja pabrik. Bagi banyak perusahaan, bus ini dianggap sekadar fasilitas operasional biasa. Padahal, begitu bus tersebut membawa penumpang di jalan raya, perusahaan sudah memikul tanggung jawab hukum atas keselamatan setiap orang di dalamnya — terlepas dari apakah mereka menyadarinya atau tidak.

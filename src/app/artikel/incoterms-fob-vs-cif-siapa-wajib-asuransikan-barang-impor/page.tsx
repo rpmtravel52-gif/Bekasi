@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kargo", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "incoterms fob vs cif, asuransi barang impor bekasi, siapa wajib asuransi impor, marine cargo insurance incoterms, asuransi impor bahan baku cikarang",
+  keywords: "incoterms fob vs cif, siapa wajib asuransi barang impor, klausul asuransi kontrak dagang impor, perbedaan fob dan cif asuransi",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelIncotermsFobCif() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini membahas pembagian kewajiban asuransi dalam kontrak dagang. Alur risiko pengiriman hingga gudang ada di panduan marine cargo." links={[{ href: "/asuransi-kargo/marine-cargo", label: "Marine Cargo Insurance Bekasi" },{ href: "/artikel/panduan-marine-cargo-importir-bahan-baku-kawasan-industri-bekasi", label: "Panduan marine cargo untuk importir bahan baku" }]} />
 
       <p>
         Bagi importir bahan baku yang berbasis di kawasan industri Bekasi — Jababeka, MM2100, EJIP, hingga yang memakai jalur Cikarang Dry Port — istilah FOB dan CIF biasanya hanya dibaca sekilas di invoice supplier tanpa benar-benar dipahami konsekuensinya. Padahal dua istilah dagang internasional ini menentukan satu hal yang sangat konkret: <strong>siapa yang menanggung kerugian jika barang rusak, hilang, atau tenggelam selama pelayaran</strong>. Salah asumsi soal ini, dan Anda bisa jadi baru sadar tidak ada polis yang melindungi barang Anda tepat pada saat klaim dibutuhkan.

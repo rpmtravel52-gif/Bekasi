@@ -6,7 +6,7 @@ import { KONTAK } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Asuransi Engineering Bekasi – CAR & CECR",
   description: "Praktisi asuransi engineering independen di Bekasi. Contractor All Risk (CAR) untuk proyek konstruksi dan CECR untuk infrastruktur sipil. Konsultasi gratis.",
-  keywords: "asuransi engineering bekasi, contractor all risk bekasi, CAR bekasi, CECR bekasi, asuransi konstruksi bekasi, asuransi proyek sipil bekasi",
+  keywords: "asuransi engineering bekasi, asuransi konstruksi bekasi, asuransi proyek sipil bekasi",
   alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-engineering" },
   openGraph: {
     title: "Asuransi Engineering Bekasi – CAR & CECR",

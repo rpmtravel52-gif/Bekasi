@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kargo", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "marine cargo bekasi, asuransi impor bahan baku cikarang, asuransi kargo jababeka, cikarang dry port asuransi, marine cargo insurance kawasan industri",
+  keywords: "asuransi impor bahan baku cikarang, titik rawan kargo impor tanjung priok, cikarang dry port asuransi, klaim marine cargo importir",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelMarineCargoBahanBaku() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini membahas rantai pengiriman impor dari pelabuhan hingga gudang pabrik. Pembagian tanggung jawab asuransi antara penjual dan pembeli dibahas di artikel Incoterms." links={[{ href: "/asuransi-kargo/marine-cargo", label: "Marine Cargo Insurance Bekasi — produk dan pengajuan" },{ href: "/artikel/incoterms-fob-vs-cif-siapa-wajib-asuransikan-barang-impor", label: "Incoterms FOB vs CIF: siapa wajib mengasuransikan" }]} />
 
       <p>
         Bekasi dan Cikarang adalah salah satu simpul manufaktur terbesar di Indonesia — Jababeka, MM2100, EJIP, dan kawasan mandiri di sekitarnya menampung ribuan pabrik yang sebagian besar bahan bakunya masih diimpor dari Asia, Eropa, atau Amerika. Bahan baku itu tidak langsung "muncul" di gudang pabrik. Ia melewati rantai perjalanan panjang: pelayaran internasional, bongkar di Tanjung Priok, proses kepabeanan, lalu diteruskan ke Cikarang Dry Port atau langsung ke pabrik via trucking. Setiap titik dalam rantai ini punya risikonya sendiri — dan Marine Cargo Insurance adalah satu-satunya instrumen yang menjamin seluruh rantai itu sebagai satu kesatuan.

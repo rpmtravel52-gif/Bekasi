@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kendaraan", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "asuransi mobil listrik bekasi, biaya asuransi ev bekasi, asuransi mobil listrik vs konvensional, premi asuransi mobil listrik, asuransi baterai mobil listrik",
+  keywords: "biaya asuransi mobil listrik bekasi, premi asuransi ev bekasi, perluasan baterai mobil listrik, asuransi mobil listrik vs konvensional",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelMobilListrikBekasi() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini khusus membahas biaya dan perluasan baterai untuk mobil listrik. Untuk mobil konvensional atau simulasi umum, gunakan halaman produk." links={[{ href: "/asuransi-kendaraan/mobil", label: "Asuransi Mobil Bekasi — All Risk, TLO & kalkulator premi" },{ href: "/artikel/all-risk-vs-tlo-mobil-baru-bekasi", label: "All Risk vs TLO untuk mobil baru" }]} />
 
       <p>
         Perumahan-perumahan baru di kawasan Bekasi seperti Grand Wisata, Summarecon Bekasi, dan Kota Harapan Indah menunjukkan pertumbuhan populasi mobil listrik yang cukup terasa dalam dua tahun terakhir, seiring bertambahnya stasiun pengisian daya di pusat perbelanjaan dan gerbang tol. Namun ketika bicara asuransi, banyak pemilik EV baru menyadari satu hal setelah membandingkan penawaran: <strong>premi mobil listrik tidak selalu lebih murah dari mobil konvensional pada rentang harga yang sama</strong> — dan alasannya jarang dijelaskan secara gamblang.

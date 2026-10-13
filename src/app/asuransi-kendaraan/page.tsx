@@ -6,7 +6,7 @@ import { KONTAK } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Asuransi Kendaraan Bekasi – Mobil, Bus & Truk Niaga",
   description: "Praktisi asuransi kendaraan independen di Bekasi. Asuransi mobil, bus, dan truk niaga untuk personal maupun bisnis ekspedisi. Konsultasi gratis.",
-  keywords: "asuransi kendaraan bekasi, asuransi mobil bekasi, asuransi bus bekasi, asuransi truk bekasi, asuransi kendaraan niaga bekasi",
+  keywords: "asuransi kendaraan bekasi, asuransi kendaraan perusahaan bekasi, asuransi armada bekasi",
   alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-kendaraan" },
   openGraph: {
     title: "Asuransi Kendaraan Bekasi – Mobil, Bus & Truk Niaga",

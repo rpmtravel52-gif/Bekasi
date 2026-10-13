@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kendaraan", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "all risk vs tlo bekasi, asuransi mobil baru bekasi, perbedaan all risk dan tlo, asuransi mobil all risk bekasi, tlo atau all risk mobil baru",
+  keywords: "all risk vs tlo bekasi, perbedaan all risk dan tlo, tlo atau all risk mobil baru, simulasi premi all risk tlo",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelAllRiskVsTLO() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini membandingkan All Risk dan TLO untuk mobil baru. Pengajuan polis dan kalkulator ada di halaman produk." links={[{ href: "/asuransi-kendaraan/mobil", label: "Asuransi Mobil Bekasi" },{ href: "/artikel/biaya-asuransi-mobil-listrik-bekasi", label: "Biaya asuransi mobil listrik di Bekasi" }]} />
 
       <p>
         Kalau Anda baru saja membawa pulang mobil baru dan sedang dihadapkan pada pilihan antara <strong>All Risk (Comprehensive)</strong> dan <strong>TLO (Total Loss Only)</strong>, pertanyaan yang sering muncul bukan "mana yang lebih murah" — tapi "mana yang benar-benar lebih untung dalam jangka panjang". Untuk kondisi lalu lintas dan cuaca Bekasi, jawabannya lebih spesifik dari sekadar teori umum di internet.

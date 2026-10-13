@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kendaraan", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "asuransi truk jababeka, asuransi truk mm2100, asuransi ekspedisi bekasi, asuransi truk kawasan industri cikarang, asuransi armada truk bekasi",
+  keywords: "asuransi truk jababeka, asuransi truk mm2100, premi asuransi truk ekspedisi, polis truk kawasan industri cikarang, fleet insurance ekspedisi",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelTrukEkspedisiJababeka() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini fokus pada polis kendaraan (truk) untuk armada ekspedisi. Perlindungan barang muatan dibahas terpisah." links={[{ href: "/asuransi-kendaraan/truk-kendaraan-niaga", label: "Asuransi Truk & Kendaraan Niaga Bekasi" },{ href: "/artikel/kenapa-ekspedisi-truk-perlu-asuransi-kargo-terpisah-dari-asuransi-kendaraan", label: "Mengapa muatan perlu polis kargo terpisah" },{ href: "/asuransi-kargo/kargo-darat", label: "Asuransi Kargo Darat Bekasi" }]} />
 
       <p>
         Jababeka dan MM2100 adalah dua dari kawasan industri terpadat di koridor Cikarang-Bekasi, menampung ratusan pabrik manufaktur, elektronik, dan pergudangan yang bergantung penuh pada arus truk masuk-keluar setiap hari. Bagi pelaku usaha ekspedisi yang melayani kawasan ini, truk bukan sekadar alat angkut — ia adalah aset produktif yang menentukan apakah pengiriman ke klien tepat waktu atau tidak. Kegagalan melindunginya secara tepat bisa langsung mengganggu arus kas usaha.

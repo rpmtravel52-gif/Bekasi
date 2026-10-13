@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("liability", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "public liability bekasi, asuransi tanggung gugat pabrik bekasi, asuransi pihak ketiga kawasan industri, ledakan spbe cimuning, asuransi tanggung jawab hukum industri bekasi",
+  keywords: "ledakan spbe cimuning, risiko pihak ketiga pabrik bekasi, tuntutan ganti rugi warga sekitar pabrik, kenapa pabrik butuh asuransi pihak ketiga",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelPublicLiabilityPabrik() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini menguraikan risiko tuntutan pihak ketiga bagi pabrik, berdasarkan kasus nyata. Detail cakupan dan simulasi premi ada di halaman produk." links={[{ href: "/asuransi-liability/public-liability", label: "Asuransi Public Liability Bekasi — cakupan dan simulasi premi" }]} />
 
       <p>
         Kawasan industri di Bekasi — Jababeka, MM2100, EJIP, Delta Silicon, hingga kawasan mandiri di Cikarang dan Tarumajaya — punya satu karakteristik yang sering luput dari perhitungan risiko: jaraknya yang sangat dekat dengan permukiman padat penduduk. Pabrik, gudang, dan fasilitas produksi tidak berdiri di ruang kosong. Begitu ada insiden yang berdampak keluar dari batas lahan perusahaan, yang dihadapi bukan lagi klaim aset sendiri, melainkan tuntutan dari pihak ketiga: tetangga, pengunjung, kontraktor, bahkan seluruh warga satu RW.

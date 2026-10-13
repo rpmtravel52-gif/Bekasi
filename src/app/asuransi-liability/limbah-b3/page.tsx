@@ -5,7 +5,7 @@ import { PROSES_LIABILITY, NOTE_LIABILITY } from "@/components/produk/prosesVari
 export const metadata: Metadata = {
   title: "Asuransi Limbah B3 Bekasi – Liability Pencemaran Lingkungan",
   description: "Asuransi Limbah B3 untuk perusahaan manufaktur di kawasan industri Bekasi. Lindungi bisnis dari tanggung jawab hukum pencemaran lingkungan. Konsultasi gratis.",
-  keywords: "asuransi limbah b3 bekasi, asuransi pencemaran lingkungan bekasi, environmental liability bekasi, asuransi limbah industri jababeka",
+  keywords: "asuransi limbah b3 bekasi, environmental liability bekasi, asuransi pencemaran lingkungan bekasi",
   alternates: { canonical: "https://asuransibekasi.biz.id/asuransi-liability/limbah-b3" },
 };
 

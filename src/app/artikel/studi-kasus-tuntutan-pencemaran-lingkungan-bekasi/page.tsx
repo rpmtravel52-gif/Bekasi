@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("liability", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "tuntutan pencemaran lingkungan bekasi, denda limbah b3, sanksi pencemaran lingkungan industri, studi kasus limbah b3 cikarang, asuransi limbah b3 bekasi",
+  keywords: "tuntutan pencemaran lingkungan bekasi, denda limbah b3, sanksi pidana pencemaran lingkungan, studi kasus limbah b3 cikarang",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelStudiKasusPencemaran() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini berisi studi kasus sanksi dan tuntutan pencemaran. Aturan teknisnya dibahas di artikel PP 22/2021." links={[{ href: "/asuransi-liability/limbah-b3", label: "Asuransi Limbah B3 Bekasi" },{ href: "/artikel/aturan-limbah-b3-pp-22-2021-industri-manufaktur-bekasi", label: "Aturan limbah B3 PP 22/2021 untuk industri manufaktur" }]} />
 
       <p>
         Banyak pelaku usaha di kawasan industri Bekasi menganggap risiko pencemaran limbah B3 hanya berujung pada "surat teguran" dari dinas lingkungan hidup. Tiga kasus nyata berikut menunjukkan bahwa asumsi itu jauh dari kenyataan — konsekuensinya bisa berlapis, mulai dari penyegelan fasilitas, penahanan personal, hingga ancaman denda miliaran rupiah.

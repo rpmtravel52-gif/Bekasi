@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArtikelLayout from "@/components/artikel/ArtikelLayout";
+import ScopeNote from "@/components/artikel/ScopeNote";
 import { getArtikelBySlug, getArtikelByCluster } from "@/lib/artikel";
 import { KONTAK } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const related = getArtikelByCluster("kargo", meta.slug);
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.excerpt,
-  keywords: "asuransi kargo darat bekasi, asuransi truk ekspedisi, asuransi barang muatan truk, beda asuransi kendaraan dan kargo, asuransi ekspedisi cikarang",
+  keywords: "beda asuransi kendaraan dan kargo, asuransi truk tidak menjamin muatan, goods in transit vs polis truk, tanggung jawab muatan ekspedisi",
   alternates: { canonical: `https://asuransibekasi.biz.id/artikel/${meta.slug}` },
   authors: [{ name: "Nur Hidayat" }],
   openGraph: {
@@ -69,6 +70,8 @@ export default function ArtikelEkspedisiTrukAsuransiKargo() {
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+
+      <ScopeNote scope="Artikel ini menjelaskan mengapa polis truk tidak menjamin barang muatan. Untuk produk perlindungan muatannya, buka halaman Asuransi Kargo Darat; untuk memilih polis truknya, baca panduan truk di bawah." links={[{ href: "/asuransi-kargo/kargo-darat", label: "Asuransi Kargo Darat Bekasi — cakupan dan simulasi premi muatan" },{ href: "/artikel/panduan-asuransi-truk-ekspedisi-jababeka-mm2100", label: "Memilih polis truk untuk armada ekspedisi Jababeka & MM2100" }]} />
 
       <p>
         Tol Jakarta-Cikampek adalah urat nadi distribusi bagi ribuan pelaku ekspedisi yang berbasis di kawasan pergudangan Bekasi dan Cikarang. Setiap hari, ratusan truk kontainer dan truk box melintasi jalur ini membawa muatan bernilai puluhan hingga ratusan juta rupiah per pengiriman. Namun banyak pelaku ekspedisi baru menyadari satu celah krusial setelah insiden terjadi: <strong>polis asuransi kendaraan yang mereka miliki tidak pernah dirancang untuk melindungi nilai barang yang diangkut</strong> — hanya truknya.
